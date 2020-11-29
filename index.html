@@ -566,28 +566,37 @@
         </section>
     </main>
     <footer class="main-footer">
-        <div class="map">
+        <div id="map" class="map" style="width: 1300px; height: 500px">
             <!-- yandex maps -->
         </div>
         <section class="footer__contacts">
-            <h2>Контактная информация</h2>
-            <address>
-                <div class="footer__address-container">
-                    <h3>Адрес</h3>
-                    <p>Загородное шоссе, д. 1 стр. 2</p>
-                    <p>Мы работаем ежедневно c 9:00 до 21:00</p>
-                </div>
-                <div class="footer__address-container">
-                    <h3>Контактные данные</h3>
-                    <a href="tel:+74959816597">+7 (495) 981-65-97</a>
-                    <a href="mailto:mail@voron-auto.ru">mail@voron-auto.ru</a>
-                    <a href="skype:antonvoronauto">antonvoronauto</a>
-                </div>
-                <button type="button" class="footer__sent-massage">Отправить сообщение</button>
-            </address>
+            <div class="footer__contacts-wrap">
+                <h2>Контактная информация</h2>
+                <address>
+                    <div class="footer__address-container">
+                        <h3>Адрес</h3>
+                        <p>Загородное шоссе, д. 1 стр. 2</p>
+                        <p>Мы работаем ежедневно c 9:00 до 21:00</p>
+                    </div>
+                    <div class="footer__address-container">
+                        <h3>Контактные данные</h3>
+                        <a href="tel:+74959816597">+7 (495) 981-65-97</a>
+                        <a href="mailto:mail@voron-auto.ru">mail@voron-auto.ru</a>
+                        <a href="skype:antonvoronauto">antonvoronauto</a>
+                    </div>
+                    <button type="button" class="footer__sent-massage">Отправить сообщение</button>
+                </address>
+            </div>
+            <div class="footer__contacts-wrap">
+                <a href="http://maps.yandex.ru/-/CVvjbR9r" target="_blank">Посмотреть на Яндекс картах</a>
+                <a href="https://goo.gl/maps/83GndXzDd5T2" target="_blank">Посмотреть на Google картах</a>
             </div>
         </section>
     </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJBfyiah9gvbylKq6gSj52BQrleioN-SY&callback=initMap"
+        async defer></script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>
