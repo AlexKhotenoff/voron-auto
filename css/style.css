@@ -2,43 +2,43 @@
   font-family: "Roboto-Light";
   font-weight: 300;
   font-style: normal;
-  src: local("Roboto-Light"), url("./fonts/Roboto-Light.ttf") format("truetype"), url("./fonts/Roboto-Light.woff") format("woff"), url("./fonts/Roboto-Light.woff2") format("woff2"); }
+  src: local("Roboto-Light"), url("/fonts/Roboto-Light.ttf") format("truetype"), url("/fonts/Roboto-Light.woff") format("woff"), url("/fonts/Roboto-Light.woff2") format("woff2"); }
 
 @font-face {
   font-family: "Roboto-Regular";
   font-weight: 400;
   font-style: normal;
-  src: local("Roboto-Regular"), url("./fonts/Roboto-Regular.ttf") format("truetype"), url("./fonts/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto-Regular.woff2") format("woff2"); }
+  src: local("Roboto-Regular"), url("/fonts/Roboto-Regular.ttf") format("truetype"), url("/fonts/Roboto-Regular.woff") format("woff"), url("/fonts/Roboto-Regular.woff2") format("woff2"); }
 
 @font-face {
   font-family: "Roboto-Medium";
   font-weight: 500;
   font-style: normal;
-  src: local("Roboto-Medium"), url("./fonts/Roboto-Medium.ttf") format("truetype"), url("./fonts/Roboto-Medium.woff") format("woff"), url("./fonts/Roboto-Medium.woff2") format("woff2"); }
+  src: local("Roboto-Medium"), url("/fonts/Roboto-Medium.ttf") format("truetype"), url("/fonts/Roboto-Medium.woff") format("woff"), url("/fonts/Roboto-Medium.woff2") format("woff2"); }
 
 @font-face {
   font-family: "Roboto-Bold";
   font-weight: 700;
   font-style: normal;
-  src: local("Roboto-Bold"), url("./fonts/Roboto-Bold.ttf") format("truetype"), url("./fonts/Roboto-Bold.woff") format("woff"), url("./fonts/Roboto-Bold.woff2") format("woff2"); }
+  src: local("Roboto-Bold"), url("/fonts/Roboto-Bold.ttf") format("truetype"), url("/fonts/Roboto-Bold.woff") format("woff"), url("/fonts/Roboto-Bold.woff2") format("woff2"); }
 
 @font-face {
   font-family: "RobotoCondensed-Regular";
   font-weight: 400;
   font-style: normal;
-  src: local("RobotoCondensed-Regular"), url("./fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("./fonts/RobotoCondensed-Regular.woff") format("woff"), url("./fonts/RobotoCondensed-Regular.woff2") format("woff2"); }
+  src: local("RobotoCondensed-Regular"), url("/fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("/fonts/RobotoCondensed-Regular.woff") format("woff"), url("/fonts/RobotoCondensed-Regular.woff2") format("woff2"); }
 
 @font-face {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
   font-style: normal;
-  src: local("RobotoCondensed-Bold"), url("./fonts/RobotoCondensed-Bold.ttf") format("truetype"), url("./fonts/RobotoCondensed-Bold.woff") format("woff"), url("./fonts/RobotoCondensed-Bold.woff2") format("woff2"); }
+  src: local("RobotoCondensed-Bold"), url("/fonts/RobotoCondensed-Bold.ttf") format("truetype"), url("/fonts/RobotoCondensed-Bold.woff") format("woff"), url("/fonts/RobotoCondensed-Bold.woff2") format("woff2"); }
 
 @font-face {
   font-family: "Ubuntu-Regular";
   font-weight: 700;
   font-style: normal;
-  src: local("Ubuntu-Regular"), url("./fonts/Ubuntu-Regular.ttf") format("truetype"), url("./fonts/Ubuntu-Regular.woff") format("woff"), url("./fonts/Ubuntu-Regular.woff2") format("woff2"); }
+  src: local("Ubuntu-Regular"), url("/fonts/Ubuntu-Regular.ttf") format("truetype"), url("/fonts/Ubuntu-Regular.woff") format("woff"), url("/fonts/Ubuntu-Regular.woff2") format("woff2"); }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -369,3 +369,118 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+@keyframes slide-fade {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.bg-slider {
+  width: 100%;
+  height: 100%; }
+
+.bg-slider__slide {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  .bg-slider__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; }
+
+.bg-slider__slide_fade {
+  animation: slide-fade 3s normal; }
+
+.page {
+  width: 100%; }
+
+.page__container {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 635px;
+  background-color: #788d96; }
+
+.header__wrap {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.header__top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 115px;
+  padding: 0 40px; }
+
+.header__logo {
+  margin-right: 30px; }
+  .header__logo-img {
+    width: 109px;
+    height: 47px; }
+
+.header__logo-description {
+  margin-right: 40px; }
+  .header__logo-description h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: 'RobotoCondensed-Bold', 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .header__logo-description p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto-Regular', 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff; }
+
+.header__subaru-logo {
+  width: 89px;
+  height: 49px; }
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  text-align: right; }
+  .header__contacts a {
+    margin-bottom: 10px;
+    font-family: 'RobotoCondensed-Bold', 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 18px;
+    text-decoration: none;
+    color: #ffffff; }
+    .header__contacts a:hover {
+      color: #1bace8;
+      cursor: pointer; }
+    .header__contacts a:active {
+      color: #105a7a; }
+
+.header__callback {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px dashed #ffffff;
+  font-family: 'Roboto-Regular', 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer; }
+  .header__callback:hover {
+    border-color: transparent;
+    color: #1bace8; }
+  .header__callback:active {
+    color: #105a7a; }
