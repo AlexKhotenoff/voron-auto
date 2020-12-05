@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto-Light";
   font-weight: 300;
@@ -417,10 +418,6 @@ img {
   padding: 0;
   list-style: none; }
 
-.main-nav__list_no-mobile .main-nav__item:hover .main-nav__list_sub-menu {
-  display: block;
-  box-shadow: 0 8px 8px 0px rgba(0, 0, 0, 0.4); }
-
 .main-nav__list_mobile {
   display: flex;
   flex-direction: column;
@@ -457,9 +454,7 @@ img {
 
 .main-nav__item {
   position: relative;
-  margin-right: 35px;
-  padding-top: 21px;
-  padding-bottom: 21px; }
+  margin-right: 35px; }
   .main-nav__item::before {
     content: "";
     position: absolute;
@@ -481,6 +476,19 @@ img {
     animation: none; }
   .main-nav__item_active > .main-nav__link {
     color: #1bace8; }
+  .main-nav__item_sub-menu-arrow {
+    display: flex;
+    align-items: center; }
+    .main-nav__item_sub-menu-arrow::after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/icons/svg/down-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+    .main-nav__item_sub-menu-arrow:hover::after {
+      background-image: url("../img/icons/svg/up-arrow.svg"); }
 
 .main-nav__item-wrapper {
   display: flex;
@@ -509,13 +517,11 @@ img {
   position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding-left: 5px;
   padding-right: 5px;
   font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 80px;
   text-transform: uppercase;
   color: #000000; }
   .main-nav__link:hover {
@@ -534,6 +540,17 @@ img {
   list-style: none;
   z-index: 2; }
 
+.main-nav__list_no-mobile .main-nav__item:hover .main-nav__list_sub-menu {
+  display: flex;
+  left: -40px;
+  top: 100%;
+  width: 100vw;
+  max-width: 860px;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  box-shadow: 0 8px 8px 0px rgba(0, 0, 0, 0.4); }
+
 @keyframes sub-menu-open {
   from {
     opacity: 0;
@@ -549,7 +566,9 @@ img {
   animation: sub-menu-open 0.5s normal; }
 
 .main-nav__item_sub-menu {
-  width: calc(100%/3); }
+  width: calc(100% / 3);
+  margin: 0;
+  padding: 0; }
   .main-nav__item_sub-menu:hover {
     background-color: #1bace8; }
     .main-nav__item_sub-menu:hover a {
@@ -574,8 +593,13 @@ img {
 
 .main-nav__link_sub-menu {
   justify-content: flex-start;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 50px;
   font-size: 14px; }
 
 .main-nav__toggle {
@@ -667,6 +691,7 @@ img {
     display: block;
     width: 350px;
     padding: 20px;
+    background-color: #f3f3f3;
     box-shadow: -4px 10px 9px 4px rgba(0, 0, 0, 0.4);
     overflow: scroll; }
   .main-nav__toggle {
@@ -674,21 +699,30 @@ img {
     margin-right: 10px; }
   .main-nav__item::before {
     display: none; }
+  .main-nav__item_sub-menu {
+    width: 100%; }
   .main-nav__item_sub-menu::before {
     display: none; }
+  .main-nav__item_sub-menu-arrow {
+    display: block; }
+    .main-nav__item_sub-menu-arrow::after {
+      display: none; }
   .main-nav__button_dropdown {
     display: block; }
   .main-nav__list_sub-menu-open {
     display: block;
     background-color: transparent;
     width: 100%;
+    padding: 0;
+    padding-bottom: 5px;
     position: static; }
   .main-nav__link {
     justify-content: flex-start;
     width: 100%;
     padding-top: 4px;
     padding-bottom: 4px;
-    font-size: 24px; }
+    font-size: 24px;
+    line-height: 50px; }
     .main-nav__link_sub-menu {
       font-size: 18px; } }
 
@@ -712,13 +746,12 @@ img {
   background-color: #788d96; }
 
 .header__wrap {
-  position: absolute;
-  top: 0;
   width: 100%; }
 
 .header__top {
   display: flex;
   align-items: center;
+  position: relative;
   width: 100%;
   min-height: 115px;
   padding: 0 40px; }
@@ -790,3 +823,81 @@ img {
     color: #1bace8; }
   .header__callback:active {
     color: #105a7a; }
+
+.main-nav {
+  position: relative; }
+
+.header__promo {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 55px; }
+  .header__promo h2 {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    color: #ffffff; }
+    .header__promo h2:last-child {
+      margin-bottom: 0; }
+  .header__promo p {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #ffffff; }
+
+.header__button-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0;
+  margin-bottom: 65px;
+  list-style: none; }
+  .header__button-list .header__button {
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 45px;
+    padding-right: 15px;
+    border: none;
+    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 55px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    color: #ffffff;
+    background-color: #1bace8;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: auto 25px;
+    cursor: pointer; }
+    .header__button-list .header__button:hover {
+      text-decoration: none; }
+    .header__button-list .header__button_repair {
+      background-image: url("/img/icons/repair_icon.png"); }
+    .header__button-list .header__button_service-calc {
+      background-image: url("/img/icons/service_calc_icon.png"); }
+    .header__button-list .header__button_evacuator {
+      padding-left: 60px;
+      background-image: url("/img/icons/evaсuator_icon.png"); }
+    .header__button-list .header__button_red {
+      background-color: #a7402a; }

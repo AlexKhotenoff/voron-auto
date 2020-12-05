@@ -5,6 +5,8 @@ var sandvitch_icon = document.querySelector('.main-nav__sandvitch');
 var nav_dropdown_button = nav_list.querySelectorAll('.main-nav__button_dropdown');
 //end of menu vars
 
+find_submenu();
+
 //menu
 toggle_button.addEventListener('click', function () {
     menu_toggle();
@@ -108,3 +110,13 @@ dropdown_button.forEach(element => {
 window.addEventListener("orientationchange", function () {
     menu_close();
   }, false);
+
+function find_submenu() {
+    var nav_item_array = nav_list.querySelectorAll(".main-nav__item");
+
+    nav_item_array.forEach(element => {
+        if (element.querySelector("ul")) {
+            element.classList.add("main-nav__item_sub-menu-arrow");
+        }
+    });
+}
