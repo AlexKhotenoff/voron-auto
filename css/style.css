@@ -361,7 +361,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.visually-hidden, .search-panel__title {
+.visually-hidden, .search-panel__title, .for-clients h2 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -395,9 +395,7 @@ img {
   animation: slide-fade 3s normal; }
 
 .main-nav {
-  position: relative;
-  min-width: 60%;
-  background-color: rgba(255, 255, 255, 0.781); }
+  position: relative; }
 
 @keyframes nav-list-open {
   0% {
@@ -826,7 +824,9 @@ img {
     color: #105a7a; }
 
 .main-nav {
-  position: relative; }
+  position: relative;
+  max-width: 1280px;
+  background-color: rgba(255, 255, 255, 0.781); }
 
 .header__promo {
   position: relative;
@@ -992,7 +992,7 @@ img {
 .services__link {
   display: block;
   min-height: 160px;
-  padding-top: 75px;
+  padding-top: 70px;
   padding-bottom: 20px;
   text-align: center; }
   .services__link span {
@@ -1003,6 +1003,9 @@ img {
     font-size: 14px;
     text-transform: uppercase;
     color: #1bace8; }
+  .services__link:hover span {
+    text-decoration: underline;
+    text-decoration-style: dotted; }
   .services__link p {
     margin: 0;
     padding: 0;
@@ -1010,4 +1013,193 @@ img {
     font-weight: 400;
     font-size: 14px;
     text-transform: none;
+    color: #000000; }
+
+.about-promo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px; }
+
+.about-promo__promo {
+  width: 75%;
+  text-align: left; }
+  .about-promo__promo h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000; }
+  .about-promo__promo p {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000; }
+    .about-promo__promo p span {
+      display: inline-block;
+      font-family: "Roboto-Bold", "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: left;
+      color: #ff4821; }
+  .about-promo__promo ul {
+    margin: 0;
+    margin-left: 145px;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+    text-align: left; }
+  .about-promo__promo li {
+    position: relative;
+    margin: 0;
+    padding: 0; }
+    .about-promo__promo li::before {
+      position: absolute;
+      left: -20px;
+      top: 4px;
+      content: "";
+      width: 7px;
+      height: 7px;
+      background-color: #ff4821; }
+    .about-promo__promo li p {
+      margin: 0;
+      padding: 0; }
+
+.about-promo__more-button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: #1bace8;
+  background-color: transparent;
+  cursor: pointer; }
+  .about-promo__more-button:hover {
+    text-decoration: none; }
+  .about-promo__more-button::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    width: 10px;
+    height: 6px;
+    background-image: url("../img/icons/svg/down-arrow_blue.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+
+.guarantee-banner img {
+  width: 285px; }
+
+.for-clients {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.for-clients__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 550px; }
+  .for-clients__article h3 {
+    min-height: 50px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000000; }
+  .for-clients__article p {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000; }
+    .for-clients__article p:last-child {
+      margin-bottom: 65px; }
+  .for-clients__article a {
+    display: block;
+    margin: 0;
+    margin-top: auto;
+    padding: 0;
+    padding-left: 75px;
+    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 55px;
+    text-decoration: underline;
+    color: #1bace8;
+    background-color: #f9f9f9;
+    background-image: url("../img/icons/doc_icon.png");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 35px 34px; }
+    .for-clients__article a:hover {
+      text-decoration: none; }
+
+.main__banner {
+  margin-top: 90px;
+  margin-bottom: 100px; }
+
+.promo-banner {
+  display: flex;
+  box-shadow: 0 -2px 6px 0px rgba(0, 0, 0, 0.1); }
+
+.promo-banner__promo-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.promo-banner__logo {
+  width: 205px;
+  margin-bottom: 30px; }
+
+.promo-banner__promo-text {
+  margin-bottom: 40px;
+  text-align: center; }
+  .promo-banner__promo-text p {
+    margin: 0;
+    padding: 0;
+    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px; }
+    .promo-banner__promo-text p:first-child {
+      font-size: 30px;
+      text-transform: uppercase;
+      color: #ff4617; }
+
+.promo-banner__promo-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .promo-banner__promo-description h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000000; }
+  .promo-banner__promo-description p {
+    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     color: #000000; }
