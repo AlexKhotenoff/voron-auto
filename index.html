@@ -25,7 +25,7 @@
                 <img src="/img/slider/1.jpg" alt="1 slide">
             </div> -->
         </div>
-        <div class="header__wrap page__container">
+        <div class="header__wrap">
             <section class="header__top page__container">
                 <a href="https://voron-auto.ru" target="_blank" rel="noopener noreferrer" class="header__logo">
                     <img src="img/logo.png" width="109" height="47" alt="Логотип фирмы Voron Auto"
@@ -62,7 +62,8 @@
                                 <a href="#" class="main-nav__link main-nav__link_sub-menu">Ремонт ходовой</a>
                             </li>
                             <li class="main-nav__item main-nav__item_sub-menu">
-                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Ремонт электрооборудования</a>
+                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Ремонт
+                                    электрооборудования</a>
                             </li>
                             <li class="main-nav__item main-nav__item_sub-menu">
                                 <a href="#" class="main-nav__link main-nav__link_sub-menu">Ремонт коробки
@@ -96,7 +97,8 @@
                                 <a href="#" class="main-nav__link main-nav__link_sub-menu">Замена ремня ГРМ</a>
                             </li>
                             <li class="main-nav__item main-nav__item_sub-menu">
-                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Запчасти на все модели Субару</a>
+                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Запчасти на все модели
+                                    Субару</a>
                             </li>
                             <li class="main-nav__item main-nav__item_sub-menu">
                                 <a href="#" class="main-nav__link main-nav__link_sub-menu">Запчасти по каталогу</a>
@@ -105,7 +107,8 @@
                                 <a href="#" class="main-nav__link main-nav__link_sub-menu">Контрактные запчасти</a>
                             </li>
                             <li class="main-nav__item main-nav__item_sub-menu">
-                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Дополнительное оборудование</a>
+                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Дополнительное
+                                    оборудование</a>
                             </li>
                             <li class="main-nav__item main-nav__item_sub-menu">
                                 <a href="#" class="main-nav__link main-nav__link_sub-menu">Установка сигнализации</a>
@@ -117,10 +120,12 @@
                                 <a href="#" class="main-nav__link main-nav__link_sub-menu">Установка защиты</a>
                             </li>
                             <li class="main-nav__item main-nav__item_sub-menu">
-                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Установка видеорегистратора</a>
+                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Установка
+                                    видеорегистратора</a>
                             </li>
                             <li class="main-nav__item main-nav__item_sub-menu">
-                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Установка парковочных радаров</a>
+                                <a href="#" class="main-nav__link main-nav__link_sub-menu">Установка парковочных
+                                    радаров</a>
                             </li>
                             <li class="main-nav__item main-nav__item_sub-menu">
                                 <a href="#" class="main-nav__link main-nav__link_sub-menu">Эвакуатор</a>
@@ -148,9 +153,11 @@
                 </button>
             </nav>
             <section class="header__promo page__container">
-                <h2>Продажа автозапчастей</h2>
-                <p>а так же</p>
-                <h2>Обслуживание и ремонт вашего автомобиля в специализированном автотехцентре</h2>
+                <div class="header__promo-wrapper">
+                    <h2>Продажа автозапчастей</h2>
+                    <p>а так же</p>
+                    <h2>Обслуживание и ремонт вашего автомобиля в специализированном автотехцентре</h2>
+                </div>
             </section>
             <!-- <section class="header__buttons"> -->
             <ul class="header__button-list page__container">
@@ -174,425 +181,448 @@
         </div>
     </header>
     <main class="main">
-        <section class="main__search search-panel">
+        <section class="main__search search-panel page__container">
             <div class="search-panel__container">
                 <h2 class="search-panel__title">Панель поиска по сайту</h2>
                 <form action="get" class="search-panel__form">
                     <input type="search" name="search-input" id="search-input"
-                        placeholder="Поиск запчастей (введите код или название запчасти, не менее 3-х символов)">
+                        placeholder="Поиск запчастей (введите код или название запчасти, не менее 3-х символов)"
+                        class="search-panel__input">
                     <button type="button" class="search-panel__button">
-                        O
                     </button>
                 </form>
             </div>
         </section>
-        <section class="main__services services">
-            <h2 class="services__title">
-                Услуги автотехцентра
-            </h2>
-            <ul class="services__list">
-                <li class="services__item">
-                    <a href="#" class="services__link">
-                        Ремонт двигателя
-                        <p>Тут будет краткое описание данного продукта</p>
-                    </a>
-                </li>
-                <li class="services__item">
-                    <a href="#" class="services__link">
-                        Ремонт ходовой части
-                        <p>Тут будет краткое описание данного продукта</p>
-                    </a>
-                </li>
-                <li class="services__item">
-                    <a href="#" class="services__link">
-                        Ремонт электрооборудования
-                        <p>Тут будет краткое описание данного продукта</p>
-                    </a>
-                </li>
-                <li class="services__item">
-                    <a href="#" class="services__link">
-                        Установка и ремонт других систем автомобиля
-                        <p>Тут будет краткое описание данного продукта</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="main__about-promo about-promo">
-            <section class="about-promo__promo">
-                <div class="about-promo__wrapper">
-                    <h1>Сервис Субару</h1>
-                    <p>Регулярная проверка узлов и агрегатов любого автомобиля Субару в комплексе с грамотным сервисным
-                        обслуживанием позволит проехать более 300 тыс. км без значительных поломок и серьезных затрат на
-                        ремонт Субару. Для этого достаточно всего лишь обращать внимание на любые изменения в поведении
-                        машины на дороге, появившиеся шумы и стуки, и при выявлении любых негативных признаков приехать
-                        к нам в сервис, пока решить проблему можно простой заменой изношенной детали.</p>
-                    <p>Оказываем весь комплекс сервисных услуг по ремонту и обслуживанию автомобилей Subaru любого года
-                        выпуска.
-                        Проводим все виды ТО в соответствии с регламентом техобслуживания завода изготовителя. Выполняем
-                        полный
-                        спектр технического обслуживания и ремонта, в том числе:</p>
-                    <ul>
-                        <li>
-                            <p>
-                                Комплексную и компьютерную диагностику двигателей и всех основных систем.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Замену масла, технических жидкостей, фильтров в ДВС, МКПП и АКПП, в том числе и в
-                                вариаторах, системе охлаждения.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Установку новых приводных ремней, в том числе и ГРМ.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Обслуживание ходовой части с регулировкой сход-развала.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Все работы, связанные с шиномонтажом.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Обслуживание кондиционеров, систем климат-контроля.
-                            </p>
-                            <p>
-                                Улучшение эксплуатационных характеристик двигателя за счет перепрошивки ЭБУ
-                                (чип-тюнинг).
-                            </p>
-                        </li>
-                    </ul>
-                    <p>
-                        Вовремя обратитесь к нам, не придется оплачивать дорогостоящий ремонт из-за игнорирования мелких
-                        проблем.
+        <div class="main__wrapper page__container">
+            <section class="main__services services">
+                <h2 class="services__title">
+                    Услуги автотехцентра
+                </h2>
+                <ul class="services__list">
+                    <li class="services__item">
+                        <a href="#" class="services__link">
+                            Ремонт двигателя
+                            <p>Тут будет краткое описание данного продукта</p>
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a href="#" class="services__link">
+                            Ремонт ходовой части
+                            <p>Тут будет краткое описание данного продукта</p>
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a href="#" class="services__link">
+                            Ремонт электрооборудования
+                            <p>Тут будет краткое описание данного продукта</p>
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a href="#" class="services__link">
+                            Установка и ремонт других систем автомобиля
+                            <p>Тут будет краткое описание данного продукта</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="main__about-promo about-promo">
+                <section class="about-promo__promo">
+                    <div class="about-promo__wrapper">
+                        <h1>Сервис Субару</h1>
+                        <p>Регулярная проверка узлов и агрегатов любого автомобиля Субару в комплексе с грамотным
+                            сервисным
+                            обслуживанием позволит проехать более 300 тыс. км без значительных поломок и серьезных
+                            затрат на
+                            ремонт Субару. Для этого достаточно всего лишь обращать внимание на любые изменения в
+                            поведении
+                            машины на дороге, появившиеся шумы и стуки, и при выявлении любых негативных признаков
+                            приехать
+                            к нам в сервис, пока решить проблему можно простой заменой изношенной детали.</p>
+                        <p>Оказываем весь комплекс сервисных услуг по ремонту и обслуживанию автомобилей Subaru любого
+                            года
+                            выпуска.
+                            Проводим все виды ТО в соответствии с регламентом техобслуживания завода изготовителя.
+                            Выполняем
+                            полный
+                            спектр технического обслуживания и ремонта, в том числе:</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Комплексную и компьютерную диагностику двигателей и всех основных систем.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Замену масла, технических жидкостей, фильтров в ДВС, МКПП и АКПП, в том числе и в
+                                    вариаторах, системе охлаждения.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Установку новых приводных ремней, в том числе и ГРМ.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Обслуживание ходовой части с регулировкой сход-развала.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Все работы, связанные с шиномонтажом.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Обслуживание кондиционеров, систем климат-контроля.
+                                </p>
+                                <p>
+                                    Улучшение эксплуатационных характеристик двигателя за счет перепрошивки ЭБУ
+                                    (чип-тюнинг).
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            Вовремя обратитесь к нам, не придется оплачивать дорогостоящий ремонт из-за игнорирования
+                            мелких
+                            проблем.
+                        </p>
+                        <span>
+                            Не важно какой у Вас Subaru: Аутбек, Форестер, Импреза, Трибека или XV.
+                        </span>
+                    </div>
+                    <button type="button" class="about-promo__more-button">Читать подробнее</button>
+                </section>
+                <section class="about-promo__banner guarantee-banner">
+                    <h2>Гарантия качества</h2>
+                    <p>“Мы имеем право проводить
+                        ТО и ремонт, с сохранением заводской гарантии! При этом цены на услуги будут всегда ниже,
+                        чем у официальных диллеров.”</p>
+                    <span class="guarantee-banner__signature"></span>
+                    <span class="guarantie-banner__stamp"></span>
+                </section>
+            </section>
+            <section class="service-calc">
+                <h2>Калькулятор ТО</h2>
+                <form action="post" class="service-calc__form calc-form">
+                    <div class="calc-form__wrapper">
+                        <div class="calc-form__about-auto">
+                            <h3>Укажите данные об автомобиле</h3>
+                            <select name="calc-model" id="calc-model" class="calc-form__select">
+                                <option value="Forester">Forester</option>
+                            </select>
+                            <select name="calc-year" id="calc-year" class="calc-form__select">
+                                <option value="2018">2018</option>
+                            </select>
+                            <select name="calc-service-type" id="calc-service-type" class="calc-form__select">
+                                <option value="TO2">TO-2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="calc-form__services">
+                        <h3>Выберите работы</h3>
+                        <ul class="calc-form__services-list">
+                            <li class="calc-form__services-item">
+                                <input type="checkbox" id="service1" name="service1" class="calc-form__service">
+                                <label for="service1" class="calc-form__service-label">
+                                    Масло моторное (2700 руб.) 4.5 л./шт.
+                                </label>
+                            </li>
+                            <li class="calc-form__services-item">
+                                <input type="checkbox" id="service2" name="service2" class="calc-form__service">
+                                <label for="service2" class="calc-form__service-label">
+                                    Кольцо уплотнительное (64 руб.)
+                                </label>
+                            </li>
+                            <li class="calc-form__services-item">
+                                <input type="checkbox" id="service3" name="service3" class="calc-form__service">
+                                <label for="service3" class="calc-form__service-label">
+                                    Фильтр масл (540 руб.)
+                                </label>
+                            </li>
+                            <li class="calc-form__services-item">
+                                <input type="checkbox" id="service4" name="service4" class="calc-form__service">
+                                <label for="service4" class="calc-form__service-label">
+                                    Фильтр салонный (780 руб.)
+                                </label>
+                            </li>
+                            <li class="calc-form__services-item">
+                                <input type="checkbox" id="service5" name="service5" class="calc-form__service">
+                                <label for="service5" class="calc-form__service-label">
+                                    Смазочные материалы (0 руб.)
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="calc-form__required">
+                        <ul class="calc-form__required-list">
+                            <li class="calc-form__required-item">Проверка работы внешних световых приборов стоимость (0
+                                руб.)</li>
+                            <li class="calc-form__required-item">Проверка уровня рабочих жидкостей (0 руб.)</li>
+                            <li class="calc-form__required-item">Диагностика ходовой части (0 руб.)</li>
+                            <li class="calc-form__required-item">Проводимые работы (1210 руб.) **</li>
+                        </ul>
+                    </div>
+                    <div class="calc-form__result-panel">
+                        <div class="calc-form__result">
+                            <p>Стоимость ТО составит:</p>
+                            <p>4 726 руб**</p>
+                        </div>
+                        <div class="calc-form__contatcs">
+                            <input type="text" name="client-name" id="client-name" placeholder="Ваше имя">
+                            <label for="client-name" class="visually-hidden">Ваше имя</label>
+
+                            <input type="tel" name="client-phone" id="client-phone" placeholder="Контактный телефон">
+                            <label for="client-phone" class="visually-hidden">Контактный телефон</label>
+
+                            <button type="submit">Записаться на ТО</button>
+                        </div>
+                    </div>
+                    <div class="calc-form__footnotes">
+                        <p class="calc-form__footnote">* Цены представлены на оригинальные запчасти. Компания Ворон-Авто
+                            настоятельно рекомендует использовать оригинальные запчасти</p>
+                        <p class="calc-form__footnote">** Сумма работ указана из расчета замены всех указанных запчастей
+                            и
+                            ГСМ.</p>
+                    </div>
+                </form>
+            </section>
+            <section class="for-clients">
+                <h2>Информация для клиентов</h2>
+                <div class="for-clients__article">
+                    <h3>Для юридических лиц с корпоративным парком автомобилей</h3>
+                    <p>Мы предлагаем индивидуальный подход к каждому корпоративному клиенту – персональный менеджер
+                        будет
+                        сопровождать все сделки с Вашей компанией, от заключения договора до выдачи автомобиля после
+                        ремонта.</p>
+                    <p>Корпоративному клиенту предоставляются постоянные скидки на автозапчасти и ремонт. Обслуживание в
+                        день обращения, отсрочка платежа, безналичная оплата.</p>
+                    <p>У нас большой опыт работы с юридическими лицами , а так же имеем отличные результаты участия в
+                        тендерах. Мы знаем как
+                        Важно быстро и главное качестевенно обслужить Ваш автопарк.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Типовой договор обслуживания</a>
+                </div>
+                <div class="for-clients__article">
+                    <h3>Оптовым покупателям</h3>
+                    <p>Наш интернет-магазин поставляет оригинальные автозапчасти оптом для станций технического
+                        обслуживания,
+                        крупных магазинов, предприятий и страховых компаний.</p>
+                    <p>У нас имеется собственный склад автозапчастей, за счет чего мы всегда держим наиболее
+                        востребованные
+                        товары в наличии.</p>
+                    <p>Компания Ворон-Авто имеет собственный парк автомобилей и готова осуществлять доставку в любой
+                        район
+                        Москвы и Московской области.
                     </p>
-                    <span>
-                        Не важно какой у Вас Subaru: Аутбек, Форестер, Импреза, Трибека или XV.
-                    </span>
+                    <p>Мы организуем доставку заказанных вами автозапчастей до вашего склада в указанное время и место в
+                        случае,
+                        если объем заказа составляет от 20 000 руб.
+                    </p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Типовой договор обслуживания</a>
                 </div>
-                <button type="button" class="about-promo__more-button">Читать подробнее</button>
             </section>
-            <section class="about-promo__banner guarantee-banner">
-                <h2>Гарантия качества</h2>
-                <p>“Мы имеем право проводить
-                    ТО и ремонт, с сохранением заводской гарантии! При этом цены на услуги будут всегда ниже,
-                    чем у официальных диллеров.”</p>
-                <span class="guarantee-banner__signature"></span>
-                <span class="guarantie-banner__stamp"></span>
+            <section class="promo-banner">
+                <div class="promo-banner__promo-info">
+                    <img src="img/logo-banner.png" alt="Логотип Voron auto Subaru service">
+                    <div class="promo-banner__promo-text">
+                        <p>СКИДКА 10%</p>
+                        <p>Для пользователей
+                            мобильного приложения</p>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="img/google-play.png" alt="Ссылка на приложение Voron auto в Google Play">
+                    </a>
+                </div>
+                <div class="promo-banner__promo-description">
+                    <h2>Гарантированная скидка для наших корпоративных клиентов</h2>
+                    <p>Тут будет какой-то описательный текст про предоставляемую для
+                        всех пользователей мобильного приложения Voron-auto cкидку в размере 10%</p>
+                </div>
             </section>
-        </section>
-        <section class="service-calc">
-            <h2>Калькулятор ТО</h2>
-            <form action="post" class="service-calc__form calc-form">
-                <div class="calc-form__wrapper">
-                    <div class="calc-form__about-auto">
-                        <h3>Укажите данные об автомобиле</h3>
-                        <select name="calc-model" id="calc-model" class="calc-form__select">
-                            <option value="Forester">Forester</option>
-                        </select>
-                        <select name="calc-year" id="calc-year" class="calc-form__select">
-                            <option value="2018">2018</option>
-                        </select>
-                        <select name="calc-service-type" id="calc-service-type" class="calc-form__select">
-                            <option value="TO2">TO-2</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="calc-form__services">
-                    <h3>Выберите работы</h3>
-                    <ul class="calc-form__services-list">
-                        <li class="calc-form__services-item">
-                            <input type="checkbox" id="service1" name="service1" class="calc-form__service">
-                            <label for="service1" class="calc-form__service-label">
-                                Масло моторное (2700 руб.) 4.5 л./шт.
-                            </label>
-                        </li>
-                        <li class="calc-form__services-item">
-                            <input type="checkbox" id="service2" name="service2" class="calc-form__service">
-                            <label for="service2" class="calc-form__service-label">
-                                Кольцо уплотнительное (64 руб.)
-                            </label>
-                        </li>
-                        <li class="calc-form__services-item">
-                            <input type="checkbox" id="service3" name="service3" class="calc-form__service">
-                            <label for="service3" class="calc-form__service-label">
-                                Фильтр масл (540 руб.)
-                            </label>
-                        </li>
-                        <li class="calc-form__services-item">
-                            <input type="checkbox" id="service4" name="service4" class="calc-form__service">
-                            <label for="service4" class="calc-form__service-label">
-                                Фильтр салонный (780 руб.)
-                            </label>
-                        </li>
-                        <li class="calc-form__services-item">
-                            <input type="checkbox" id="service5" name="service5" class="calc-form__service">
-                            <label for="service5" class="calc-form__service-label">
-                                Смазочные материалы (0 руб.)
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="calc-form__required">
-                    <ul class="calc-form__required-list">
-                        <li class="calc-form__required-item">Проверка работы внешних световых приборов стоимость (0
-                            руб.)</li>
-                        <li class="calc-form__required-item">Проверка уровня рабочих жидкостей (0 руб.)</li>
-                        <li class="calc-form__required-item">Диагностика ходовой части (0 руб.)</li>
-                        <li class="calc-form__required-item">Проводимые работы (1210 руб.) **</li>
-                    </ul>
-                </div>
-                <div class="calc-form__result-panel">
-                    <div class="calc-form__result">
-                        <p>Стоимость ТО составит:</p>
-                        <p>4 726 руб**</p>
-                    </div>
-                    <div class="calc-form__contatcs">
-                        <input type="text" name="client-name" id="client-name" placeholder="Ваше имя">
-                        <label for="client-name" class="visually-hidden">Ваше имя</label>
-
-                        <input type="tel" name="client-phone" id="client-phone" placeholder="Контактный телефон">
-                        <label for="client-phone" class="visually-hidden">Контактный телефон</label>
-
-                        <button type="submit">Записаться на ТО</button>
-                    </div>
-                </div>
-                <div class="calc-form__footnotes">
-                    <p class="calc-form__footnote">* Цены представлены на оригинальные запчасти. Компания Ворон-Авто
-                        настоятельно рекомендует использовать оригинальные запчасти</p>
-                    <p class="calc-form__footnote">** Сумма работ указана из расчета замены всех указанных запчастей и
-                        ГСМ.</p>
-                </div>
-            </form>
-        </section>
-        <section class="for-clients">
-            <h2>Информация для клиентов</h2>
-            <div class="for-clients__article">
-                <h3>Для юридических лиц с корпоративным парком автомобилей</h3>
-                <p>Мы предлагаем индивидуальный подход к каждому корпоративному клиенту – персональный менеджер будет
-                    сопровождать все сделки с Вашей компанией, от заключения договора до выдачи автомобиля после
-                    ремонта.</p>
-                <p>Корпоративному клиенту предоставляются постоянные скидки на автозапчасти и ремонт. Обслуживание в
-                    день обращения, отсрочка платежа, безналичная оплата.</p>
-                <p>У нас большой опыт работы с юридическими лицами , а так же имеем отличные результаты участия в
-                    тендерах. Мы знаем как
-                    Важно быстро и главное качестевенно обслужить Ваш автопарк.</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">Типовой договор обслуживания</a>
-            </div>
-            <div class="for-clients__article">
-                <h3>Оптовым покупателям</h3>
-                <p>Наш интернет-магазин поставляет оригинальные автозапчасти оптом для станций технического
-                    обслуживания,
-                    крупных магазинов, предприятий и страховых компаний.</p>
-                <p>У нас имеется собственный склад автозапчастей, за счет чего мы всегда держим наиболее востребованные
-                    товары в наличии.</p>
-                <p>Компания Ворон-Авто имеет собственный парк автомобилей и готова осуществлять доставку в любой район
-                    Москвы и Московской области.
+            <section class="discounts">
+                <h2>Акции и скидки</h2>
+                <ul class="discounts__list">
+                    <li class="discounts__item">
+                        <article class="discounts__article">
+                            <header class="discounts__header">
+                                <p>Срок действия</p>
+                                <p>01.01.1970 - 01.01.1971</p>
+                            </header>
+                            <main class="discounts__main">
+                                <p>
+                                    Внимание! Уважаемые клиенты. Компания ВОРОН-АВТО предлагает вам заменить рулевую
+                                    рейку
+                                    на новую оригинальную по очень выгодной цене 47500р под ключ.
+                                </p>
+                                <p>
+                                    (акция относится к автомобилям SUBARU LEGACY и SUBARU LEGACY OUTBACK с 2009 по 2014
+                                    г.в.
+                                    В цену входит снятие и установка рейки*, сход-развал*, новая оригинальная рейка.
+                                    Количество товара по акции ограничено!) Подробности у мастера-приемщика
+                                </p>
+                            </main>
+                            <footer class="discounts__footnote">
+                                <p>*в стоимость не входят работы связанные с откручиванием закисших гаек и болтов а так
+                                    же
+                                    слесарные
+                                    работы возникшие при снятии-установке агрегатов.</p>
+                            </footer>
+                        </article>
+                    </li>
+                    <li class="discounts__item">
+                        <article class="discounts__article">
+                            <header class="discounts__header">
+                                <p>Срок действия</p>
+                                <p>01.01.1970 - 01.01.1971</p>
+                            </header>
+                            <main class="discounts__main">
+                                <p>
+                                    Внимание! Уважаемые клиенты. Компания ВОРОН-АВТО предлагает вам заменить рулевую
+                                    рейку
+                                    на новую оригинальную по очень выгодной цене 47500р под ключ.
+                                </p>
+                                <p>
+                                    (акция относится к автомобилям SUBARU LEGACY и SUBARU LEGACY OUTBACK с 2009 по 2014
+                                    г.в.
+                                    В цену входит снятие и установка рейки*, сход-развал*, новая оригинальная рейка.
+                                    Количество товара по акции ограничено!) Подробности у мастера-приемщика
+                                </p>
+                            </main>
+                            <footer class="discounts__footnote">
+                                <p>*в стоимость не входят работы связанные с откручиванием закисших гаек и болтов а так
+                                    же
+                                    слесарные
+                                    работы возникшие при снятии-установке агрегатов.</p>
+                            </footer>
+                        </article>
+                    </li>
+                    <li class="discounts__item">
+                        <article class="discounts__article">
+                            <header class="discounts__header">
+                                <p>Срок действия</p>
+                                <p>01.01.1970 - 01.01.1971</p>
+                            </header>
+                            <main class="discounts__main">
+                                <p>
+                                    Внимание! Уважаемые клиенты. Компания ВОРОН-АВТО предлагает вам заменить рулевую
+                                    рейку
+                                    на новую оригинальную по очень выгодной цене 47500р под ключ.
+                                </p>
+                                <p>
+                                    (акция относится к автомобилям SUBARU LEGACY и SUBARU LEGACY OUTBACK с 2009 по 2014
+                                    г.в.
+                                    В цену входит снятие и установка рейки*, сход-развал*, новая оригинальная рейка.
+                                    Количество товара по акции ограничено!) Подробности у мастера-приемщика
+                                </p>
+                            </main>
+                            <footer class="discounts__footnote">
+                                <p>*в стоимость не входят работы связанные с откручиванием закисших гаек и болтов а так
+                                    же
+                                    слесарные
+                                    работы возникшие при снятии-установке агрегатов.</p>
+                            </footer>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <section class="cars">
+                <h2>Автомобили Subaru, которые обслуживает Voron-Auto</h2>
+                <ul class="cars__list">
+                    <li class="cars__item">
+                        <h3>Subaru WRX STi</h3>
+                        <img src="img/cars/wrx-sti.jpg" alt="Subaru WRX STi" srcset="">
+                    </li>
+                    <li class="cars__item">
+                        <h3>Subaru WRX</h3>
+                        <img src="img/cars/wrx.jpg" alt="Subaru WRX" srcset="">
+                    </li>
+                    <li class="cars__item">
+                        <h3>Subaru Impreza</h3>
+                        <img src="img/cars/impreza.jpg" alt="Subaru Impreza" srcset="">
+                    </li>
+                    <li class="cars__item">
+                        <h3>Subaru Forester</h3>
+                        <img src="img/cars/forester.jpg" alt="Subaru Forester" srcset="">
+                    </li>
+                    <li class="cars__item">
+                        <h3>Subaru Legacy</h3>
+                        <img src="img/cars/legacy.jpg" alt="Subaru Legacy" srcset="">
+                    </li>
+                    <li class="cars__item">
+                        <h3>Subaru Outback</h3>
+                        <img src="img/cars/outback.jpg" alt="Subaru Outback" srcset="">
+                    </li>
+                    <li class="cars__item">
+                        <h3>Subaru Impreza XV</h3>
+                        <img src="img/cars/impreza-xv.jpg" alt="Subaru Impreza XV" srcset="">
+                    </li>
+                    <li class="cars__item">
+                        <h3>Subaru Tribeca</h3>
+                        <img src="img/cars/tribeca.jpg" alt="Subaru Tribeca" srcset="">
+                    </li>
+                    <li class="cars__item">
+                        <h3>Subaru BRZ</h3>
+                        <img src="img/cars/brz.jpg" alt="Subaru BRZ" srcset="">
+                    </li>
+                </ul>
+            </section>
+            <section class="about-company">
+                <h2>О компании</h2>
+                <p>Компания «Ворон Авто» имеет свои собственные автомастерские, оснащенные всем необходимым
+                    оборудованием для проведения диагностики и ремонта всех типов и марок автомобилей Субару.
+                    Наши специалисты не только помогут найти и устранить поломку, но и визуально отобразить
+                    общее состояние двигателя вашего автомобиля на компьютере.</p>
+                <p>С целью обеспечения быстрого и качественного технического обслуживания и проведения ремонта
+                    автомобилей в цехах установлено сервисное оборудование ведущих мировых фирм.</p>
+                <p>Компания «Ворон Авто» имеет свои собственные автомастерские, оснащенные всем необходимым
+                    оборудованием для проведения диагностики и ремонта всех типов и марок автомобилей Субару.
+                    Наши специалисты не только помогут найти и устранить поломку, но и визуально отобразить
+                    общее состояние двигателя вашего автомобиля на компьютере.</p>
+                <p>Компания «Ворон Авто» имеет свои собственные автомастерские, оснащенные всем необходимым
+                    оборудованием для проведения диагностики и ремонта всех типов и марок автомобилей Субару.
+                    Наши специалисты не только помогут найти и устранить поломку, но и визуально отобразить
+                    общее состояние двигателя вашего автомобиля на компьютере.
                 </p>
-                <p>Мы организуем доставку заказанных вами автозапчастей до вашего склада в указанное время и место в
-                    случае,
-                    если объем заказа составляет от 20 000 руб.
-                </p>
-                <a href="#" target="_blank" rel="noopener noreferrer">Типовой договор обслуживания</a>
-            </div>
-        </section>
-        <section class="promo-banner">
-            <div class="promo-banner__promo-info">
-                <img src="img/logo-banner.png" alt="Логотип Voron auto Subaru service">
-                <div class="promo-banner__promo-text">
-                    <p>СКИДКА 10%</p>
-                    <p>Для пользователей
-                        мобильного приложения</p>
+            </section>
+            <section class="gallery">
+                <h2>Фотогалерея</h2>
+                <div class="gallery__slider">
+                    <!-- слайдер -->
                 </div>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src="img/google-play.png" alt="Ссылка на приложение Voron auto в Google Play">
-                </a>
-            </div>
-            <div class="promo-banner__promo-description">
-                <h2>Гарантированная скидка для наших корпоративных клиентов</h2>
-                <p>Тут будет какой-то описательный текст про предоставляемую для
-                    всех пользователей мобильного приложения Voron-auto cкидку в размере 10%</p>
-            </div>
-        </section>
-        <section class="discounts">
-            <h2>Акции и скидки</h2>
-            <ul class="discounts__list">
-                <li class="discounts__item">
-                    <article class="discounts__article">
-                        <header class="discounts__header">
-                            <p>Срок действия</p>
-                            <p>01.01.1970 - 01.01.1971</p>
-                        </header>
-                        <main class="discounts__main">
-                            <p>
-                                Внимание! Уважаемые клиенты. Компания ВОРОН-АВТО предлагает вам заменить рулевую рейку
-                                на новую оригинальную по очень выгодной цене 47500р под ключ.
-                            </p>
-                            <p>
-                                (акция относится к автомобилям SUBARU LEGACY и SUBARU LEGACY OUTBACK с 2009 по 2014 г.в.
-                                В цену входит снятие и установка рейки*, сход-развал*, новая оригинальная рейка.
-                                Количество товара по акции ограничено!) Подробности у мастера-приемщика
-                            </p>
-                        </main>
-                        <footer class="discounts__footnote">
-                            <p>*в стоимость не входят работы связанные с откручиванием закисших гаек и болтов а так же
-                                слесарные
-                                работы возникшие при снятии-установке агрегатов.</p>
-                        </footer>
-                    </article>
-                </li>
-                <li class="discounts__item">
-                    <article class="discounts__article">
-                        <header class="discounts__header">
-                            <p>Срок действия</p>
-                            <p>01.01.1970 - 01.01.1971</p>
-                        </header>
-                        <main class="discounts__main">
-                            <p>
-                                Внимание! Уважаемые клиенты. Компания ВОРОН-АВТО предлагает вам заменить рулевую рейку
-                                на новую оригинальную по очень выгодной цене 47500р под ключ.
-                            </p>
-                            <p>
-                                (акция относится к автомобилям SUBARU LEGACY и SUBARU LEGACY OUTBACK с 2009 по 2014 г.в.
-                                В цену входит снятие и установка рейки*, сход-развал*, новая оригинальная рейка.
-                                Количество товара по акции ограничено!) Подробности у мастера-приемщика
-                            </p>
-                        </main>
-                        <footer class="discounts__footnote">
-                            <p>*в стоимость не входят работы связанные с откручиванием закисших гаек и болтов а так же
-                                слесарные
-                                работы возникшие при снятии-установке агрегатов.</p>
-                        </footer>
-                    </article>
-                </li>
-                <li class="discounts__item">
-                    <article class="discounts__article">
-                        <header class="discounts__header">
-                            <p>Срок действия</p>
-                            <p>01.01.1970 - 01.01.1971</p>
-                        </header>
-                        <main class="discounts__main">
-                            <p>
-                                Внимание! Уважаемые клиенты. Компания ВОРОН-АВТО предлагает вам заменить рулевую рейку
-                                на новую оригинальную по очень выгодной цене 47500р под ключ.
-                            </p>
-                            <p>
-                                (акция относится к автомобилям SUBARU LEGACY и SUBARU LEGACY OUTBACK с 2009 по 2014 г.в.
-                                В цену входит снятие и установка рейки*, сход-развал*, новая оригинальная рейка.
-                                Количество товара по акции ограничено!) Подробности у мастера-приемщика
-                            </p>
-                        </main>
-                        <footer class="discounts__footnote">
-                            <p>*в стоимость не входят работы связанные с откручиванием закисших гаек и болтов а так же
-                                слесарные
-                                работы возникшие при снятии-установке агрегатов.</p>
-                        </footer>
-                    </article>
-                </li>
-            </ul>
-        </section>
-        <section class="cars">
-            <h2>Автомобили Subaru, которые обслуживает Voron-Auto</h2>
-            <ul class="cars__list">
-                <li class="cars__item">
-                    <h3>Subaru WRX STi</h3>
-                    <img src="img/cars/wrx-sti.jpg" alt="Subaru WRX STi" srcset="">
-                </li>
-                <li class="cars__item">
-                    <h3>Subaru WRX</h3>
-                    <img src="img/cars/wrx.jpg" alt="Subaru WRX" srcset="">
-                </li>
-                <li class="cars__item">
-                    <h3>Subaru Impreza</h3>
-                    <img src="img/cars/impreza.jpg" alt="Subaru Impreza" srcset="">
-                </li>
-                <li class="cars__item">
-                    <h3>Subaru Forester</h3>
-                    <img src="img/cars/forester.jpg" alt="Subaru Forester" srcset="">
-                </li>
-                <li class="cars__item">
-                    <h3>Subaru Legacy</h3>
-                    <img src="img/cars/legacy.jpg" alt="Subaru Legacy" srcset="">
-                </li>
-                <li class="cars__item">
-                    <h3>Subaru Outback</h3>
-                    <img src="img/cars/outback.jpg" alt="Subaru Outback" srcset="">
-                </li>
-                <li class="cars__item">
-                    <h3>Subaru Impreza XV</h3>
-                    <img src="img/cars/impreza-xv.jpg" alt="Subaru Impreza XV" srcset="">
-                </li>
-                <li class="cars__item">
-                    <h3>Subaru Tribeca</h3>
-                    <img src="img/cars/tribeca.jpg" alt="Subaru Tribeca" srcset="">
-                </li>
-                <li class="cars__item">
-                    <h3>Subaru BRZ</h3>
-                    <img src="img/cars/brz.jpg" alt="Subaru BRZ" srcset="">
-                </li>
-            </ul>
-        </section>
-        <section class="about-company">
-            <h2>О компании</h2>
-            <p>Компания «Ворон Авто» имеет свои собственные автомастерские, оснащенные всем необходимым
-                оборудованием для проведения диагностики и ремонта всех типов и марок автомобилей Субару.
-                Наши специалисты не только помогут найти и устранить поломку, но и визуально отобразить
-                общее состояние двигателя вашего автомобиля на компьютере.</p>
-            <p>С целью обеспечения быстрого и качественного технического обслуживания и проведения ремонта
-                автомобилей в цехах установлено сервисное оборудование ведущих мировых фирм.</p>
-            <p>Компания «Ворон Авто» имеет свои собственные автомастерские, оснащенные всем необходимым
-                оборудованием для проведения диагностики и ремонта всех типов и марок автомобилей Субару.
-                Наши специалисты не только помогут найти и устранить поломку, но и визуально отобразить
-                общее состояние двигателя вашего автомобиля на компьютере.</p>
-            <p>Компания «Ворон Авто» имеет свои собственные автомастерские, оснащенные всем необходимым
-                оборудованием для проведения диагностики и ремонта всех типов и марок автомобилей Субару.
-                Наши специалисты не только помогут найти и устранить поломку, но и визуально отобразить
-                общее состояние двигателя вашего автомобиля на компьютере.
-            </p>
-        </section>
-        <section class="gallery">
-            <h2>Фотогалерея</h2>
-            <div class="gallery__slider">
-                <!-- слайдер -->
-            </div>
-        </section>
-        <section class="advantages">
-            <ul class="advantages__list">
-                <li class="advantages__item">
-                    <h3>Оригинальные запчасти</h3>
-                    <p>В нашем сервисе, мы используем исключительно оригинальные запчасти</p>
-                </li>
-                <li class="advantages__item">
-                    <h3>Все запчасти в наличии</h3>
-                    <p>Собственный склад и своевременные закупки запчастей, благодаря
-                        этому все необходимое имеется в наличии</p>
-                </li>
-                <li class="advantages__item">
-                    <h3>Многолетний опыт мастеров</h3>
-                    <p>Все наши мастера обладают опытом от 10 лет, профессионально
-                        осуществляя ремонт автомобилей Субару</p>
-                </li>
-                <li class="advantages__item">
-                    <h3>Эвакуация автомобиля</h3>
-                    <p>Эвакуация автомобиля от клиента до сервиса и возврат готового авто
-                        обратно до клиента</p>
-                </li>
-                <li class="advantages__item">
-                    <h3>Скидки постоянным покупателям</h3>
-                    <p>Всем нашим постоянным клиентам мы предлагаем скидку от 5% до 25%</p>
-                </li>
-                <li class="advantages__item">
-                    <h3>Любовь к Subaru</h3>
-                    <p>Все специалисты нашего сервиса являются фанатами данной марки и с любовью относятся к ним.</p>
-                </li>
-            </ul>
-        </section>
+            </section>
+            <section class="advantages">
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <h3>Оригинальные запчасти</h3>
+                        <p>В нашем сервисе, мы используем исключительно оригинальные запчасти</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3>Все запчасти в наличии</h3>
+                        <p>Собственный склад и своевременные закупки запчастей, благодаря
+                            этому все необходимое имеется в наличии</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3>Многолетний опыт мастеров</h3>
+                        <p>Все наши мастера обладают опытом от 10 лет, профессионально
+                            осуществляя ремонт автомобилей Субару</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3>Эвакуация автомобиля</h3>
+                        <p>Эвакуация автомобиля от клиента до сервиса и возврат готового авто
+                            обратно до клиента</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3>Скидки постоянным покупателям</h3>
+                        <p>Всем нашим постоянным клиентам мы предлагаем скидку от 5% до 25%</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3>Любовь к Subaru</h3>
+                        <p>Все специалисты нашего сервиса являются фанатами данной марки и с любовью относятся к ним.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer class="main-footer">
         <!-- <div id="map" class="map" style="width: 1300px; height: 500px">

@@ -361,7 +361,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.visually-hidden {
+.visually-hidden, .search-panel__title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -743,6 +743,7 @@ img {
   position: relative;
   width: 100%;
   min-height: 635px;
+  padding-bottom: 65px;
   background-color: #788d96; }
 
 .header__wrap {
@@ -830,8 +831,6 @@ img {
 .header__promo {
   position: relative;
   width: 100%;
-  max-width: 400px;
-  margin: 0;
   padding-top: 45px;
   padding-bottom: 55px; }
   .header__promo h2 {
@@ -860,18 +859,21 @@ img {
     font-style: normal;
     text-transform: uppercase;
     color: #ffffff; }
+  .header__promo .header__promo-wrapper {
+    max-width: 400px; }
 
 .header__button-list {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  margin: 0;
-  margin-bottom: 65px;
   list-style: none; }
+  .header__button-list .header__button-item {
+    margin-bottom: 10px; }
+    .header__button-list .header__button-item:last-child {
+      margin-bottom: 0; }
   .header__button-list .header__button {
     margin: 0;
     margin-right: 20px;
-    margin-bottom: 10px;
     padding: 0;
     padding-left: 45px;
     padding-right: 15px;
@@ -893,11 +895,52 @@ img {
     .header__button-list .header__button:hover {
       text-decoration: none; }
     .header__button-list .header__button_repair {
-      background-image: url("/img/icons/repair_icon.png"); }
+      background-image: url("../img/icons/repair_icon.png"); }
     .header__button-list .header__button_service-calc {
-      background-image: url("/img/icons/service_calc_icon.png"); }
+      background-image: url("../img/icons/service_calc_icon.png"); }
     .header__button-list .header__button_evacuator {
       padding-left: 60px;
-      background-image: url("/img/icons/evaсuator_icon.png"); }
+      background-image: url("../img/icons/evaсuator_icon.png"); }
     .header__button-list .header__button_red {
       background-color: #a7402a; }
+
+.search-panel {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #1bace8; }
+
+.search-panel__container {
+  width: 100%; }
+
+.search-panel__form {
+  display: flex;
+  align-items: center; }
+
+.search-panel__input {
+  width: 100%;
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+  padding-left: 50px;
+  border: none;
+  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 45px;
+  background-image: url("../img/icons/search_input_icon.png");
+  background-size: 29px 32px;
+  background-position: 7px center;
+  background-repeat: no-repeat; }
+
+.search-panel__button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icons/search_icon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer; }

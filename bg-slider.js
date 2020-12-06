@@ -14,7 +14,7 @@ function getRandomIntInclusive(min, max) {
 if (slider) {
     slider_init(slider, current_slide_path);
 
-    slide_animation(slider, "../img/slider/", fade_interval);
+    slide_animation(slider, "/img/slider/", fade_interval);
 }
 
 function slider_init(slider_container, img_path) {
