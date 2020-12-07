@@ -1235,3 +1235,61 @@ img {
     font-weight: 400;
     font-size: 18px;
     color: #ffffff; }
+
+.discounts h2 {
+  margin-bottom: 50px;
+  text-align: left;
+  font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000; }
+
+.discounts__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.discounts__item {
+  max-width: 490px;
+  margin-bottom: 60px; }
+
+.discounts__header {
+  margin-bottom: 30px; }
+  .discounts__header p {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000; }
+    .discounts__header p:first-child {
+      color: #858585; }
+    .discounts__header p:last-child {
+      font-family: "Roboto-Bold", "Open Sans", sans-serif;
+      font-weight: 700; }
+
+.discounts__main p {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "Roboto-Regular", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333; }
+  .discounts__main p strong {
+    font-family: "Roboto-Bold", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ff481a; }
+
+.discounts__footnote p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-Regular", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333; }
