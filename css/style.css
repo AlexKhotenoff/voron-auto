@@ -1426,24 +1426,34 @@ img {
     height: 71px;
     margin-right: 15px; }
 
+.page__footer {
+  margin-top: 70px; }
+
 .main-footer {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  min-height: 485px; }
 
 .map {
   position: absolute;
-  left: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1; }
 
-.footer__contacts {
-  position: absolute;
-  top: 0;
-  left: 0;
+.main-footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
   z-index: 2; }
-  .footer__contacts h2 {
+  .main-footer__contacts h2 {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -1452,7 +1462,7 @@ img {
     line-height: 50px;
     color: #333333;
     background-color: rgba(255, 255, 255, 0.8); }
-  .footer__contacts h3 {
+  .main-footer__contacts h3 {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
@@ -1463,7 +1473,7 @@ img {
     text-transform: uppercase;
     text-align: left;
     color: #333333; }
-  .footer__contacts p {
+  .main-footer__contacts p {
     margin: 0;
     padding: 0;
     font-family: "Roboto-Regular", "Open Sans", sans-serif;
@@ -1471,7 +1481,7 @@ img {
     font-size: 14px;
     font-style: normal;
     color: #333333; }
-  .footer__contacts a {
+  .main-footer__contacts a {
     display: block;
     font-family: "Roboto-Regular", "Open Sans", sans-serif;
     font-weight: 400;
@@ -1479,34 +1489,49 @@ img {
     font-style: normal;
     line-height: 25px;
     color: #333333; }
-    .footer__contacts a:hover {
+    .main-footer__contacts a:hover {
       text-decoration: underline;
       text-decoration-style: dotted; }
 
-.footer__contacts-wrap {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); }
+.main-footer__contacts-wrap {
+  padding: 20px 0;
+  z-index: 3; }
+  .main-footer__contacts-wrap_links {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    line-height: 14px;
+    background-color: rgba(255, 255, 255, 0.8); }
+    .main-footer__contacts-wrap_links a {
+      margin-right: 35px;
+      color: #1bace8; }
+      .main-footer__contacts-wrap_links a:last-child {
+        margin-right: 0; }
+  .main-footer__contacts-wrap address {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); }
 
-.footer__address-container {
+.main-footer__address-container {
   margin-bottom: 30px; }
 
-.footer__contact-list {
+.main-footer__contact-list {
   margin: 0;
   padding: 0;
   list-style: none; }
-  .footer__contact-list li {
+  .main-footer__contact-list li {
     display: flex;
     margin: 0;
     margin-bottom: 15px;
     padding: 0; }
-  .footer__contact-list img {
+  .main-footer__contact-list img {
     height: 25px;
     width: 25px;
     margin-right: 20px;
     object-position: center;
     object-fit: contain; }
 
-.footer__sent-massage {
+.main-footer__sent-message {
   padding-left: 20px;
   padding-right: 20px;
   border: none;
