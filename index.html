@@ -668,9 +668,9 @@
         </div>
     </main>
     <footer class="main-footer">
-        <!-- <div id="map" class="map" style="width: 1300px; height: 500px">
+        <div id="map" class="map" style="width: 100%; height: 500px">
              yandex maps 
-        </div> -->
+        </div>
         <section class="footer__contacts">
             <div class="footer__contacts-wrap">
                 <h2>Контактная информация</h2>
@@ -682,9 +682,20 @@
                     </div>
                     <div class="footer__address-container">
                         <h3>Контактные данные</h3>
-                        <a href="tel:+74959816597">+7 (495) 981-65-97</a>
-                        <a href="mailto:mail@voron-auto.ru">mail@voron-auto.ru</a>
-                        <a href="skype:antonvoronauto">antonvoronauto</a>
+                        <ul class="footer__contact-list">
+                            <li>
+                                <img src="../img/icons/phone_icon.png" alt="Телефон">
+                                <a href="tel:+74959816597">+7 (495) 981-65-97</a>
+                            </li>
+                            <li>
+                                <img src="../img/icons/email_icon.png" alt="EMail">
+                                <a href="mailto:mail@voron-auto.ru">mail@voron-auto.ru</a>
+                            </li>
+                            <li>
+                                <img src="../img/icons/skype_icon.png" alt="Skype">
+                                <a href="skype:antonvoronauto">antonvoronauto</a>
+                            </li>
+                        </ul>
                     </div>
                     <button type="button" class="footer__sent-massage">Отправить сообщение</button>
                 </address>
@@ -696,8 +707,8 @@
         </section>
     </footer>
 
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJBfyiah9gvbylKq6gSj52BQrleioN-SY&callback=initMap"
-        async defer></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJBfyiah9gvbylKq6gSj52BQrleioN-SY&callback=initMap"
+        async defer></script>
     <script src="js/map.js"></script>
     <script src="js/bg-slider.js"></script>
     <script src="js/menu.js"></script>
