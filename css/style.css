@@ -1643,6 +1643,7 @@ img {
     font-size: 16px;
     color: #1e8bb7; }
   .cars__item img {
+    object-fit: contain;
     filter: grayscale(1); }
   .cars__item a {
     display: flex;
