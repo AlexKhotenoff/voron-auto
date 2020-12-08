@@ -2,7 +2,8 @@ var slider = document.querySelector(".bg-slider");
 var slides_count = 4;
 var current_slide_index = 1;
 var next_slide_index = getRandomIntInclusive(1, slides_count);
-var current_slide_path = "../img/slider/" + 1 + ".jpg";
+var assets_path = "../img/slider/";
+var current_slide_path = assets_path + 1 + ".jpg";
 var fade_interval = 3000;
 
 function getRandomIntInclusive(min, max) {
@@ -14,7 +15,7 @@ function getRandomIntInclusive(min, max) {
 if (slider) {
     slider_init(slider, current_slide_path);
 
-    slide_animation(slider, "../img/slider/", fade_interval);
+    slide_animation(slider, assets_path, fade_interval);
 }
 
 function slider_init(slider_container, img_path) {
