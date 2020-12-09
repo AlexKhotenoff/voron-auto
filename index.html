@@ -305,10 +305,11 @@
                 <section class="about-promo__banner guarantee-banner">
                     <h2>Гарантия качества</h2>
                     <p>“Мы имеем право проводить
-                        ТО и ремонт, с сохранением заводской гарантии! При этом цены на услуги будут всегда ниже,
+                        ТО и ремонт, <strong>с сохранением заводской гарантии!</strong> При этом цены на услуги будут
+                        всегда ниже,
                         чем у официальных диллеров.”</p>
-                        <img src="img/banner/guarantee-save-sign.png" alt="" srcset="" class="guarantee-banner__signature">
-                        <img src="img/banner/guarantee-save-stamp.png" alt="" srcset="" class="guarantee-banner__stamp">
+                    <img src="img/banner/guarantee-save-sign.png" alt="" srcset="" class="guarantee-banner__signature">
+                    <img src="img/banner/guarantee-save-stamp.png" alt="" srcset="" class="guarantee-banner__stamp">
                     <!-- <img src="../img/banner/guarantee-banner.jpg" alt="ТО и ремонт с сохранением гарантии"> -->
                 </section>
             </section>
@@ -318,74 +319,86 @@
                     <div class="calc-form__wrapper">
                         <div class="calc-form__about-auto">
                             <h3>Укажите данные об автомобиле</h3>
-                            <select name="calc-model" id="calc-model" class="calc-form__select">
-                                <option value="Forester">Forester</option>
-                            </select>
-                            <select name="calc-year" id="calc-year" class="calc-form__select">
-                                <option value="2018">2018</option>
-                            </select>
-                            <select name="calc-service-type" id="calc-service-type" class="calc-form__select">
-                                <option value="TO2">TO-2</option>
-                            </select>
+                            <div class="calc-form__select">
+                                <select name="calc-model" id="calc-model" required>
+                                    <option selected disabled hidden value="">Выберите модель автомобиля...</option>
+                                    <option value="Forester">Forester</option>
+                                    <option value="Forester">Forester</option>
+                                </select>
+                            </div>
+                            <div class="calc-form__select">
+                                <select name="calc-year" id="calc-year" required>
+                                    <option selected disabled hidden value="">Выберите год и модификацию...</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </div>
+                            <div class="calc-form__select">
+                                <select name="calc-service-type" id="calc-service-type" required>
+                                    <option selected disabled hidden value="">Выберите тип ТО<span>*</span>...</option>
+                                    <option value="TO2">TO-2</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="calc-form__services">
-                        <h3>Выберите работы</h3>
-                        <ul class="calc-form__services-list">
-                            <li class="calc-form__services-item">
-                                <input type="checkbox" id="service1" name="service1" class="calc-form__service">
-                                <label for="service1" class="calc-form__service-label">
-                                    Масло моторное (2700 руб.) 4.5 л./шт.
-                                </label>
-                            </li>
-                            <li class="calc-form__services-item">
-                                <input type="checkbox" id="service2" name="service2" class="calc-form__service">
-                                <label for="service2" class="calc-form__service-label">
-                                    Кольцо уплотнительное (64 руб.)
-                                </label>
-                            </li>
-                            <li class="calc-form__services-item">
-                                <input type="checkbox" id="service3" name="service3" class="calc-form__service">
-                                <label for="service3" class="calc-form__service-label">
-                                    Фильтр масл (540 руб.)
-                                </label>
-                            </li>
-                            <li class="calc-form__services-item">
-                                <input type="checkbox" id="service4" name="service4" class="calc-form__service">
-                                <label for="service4" class="calc-form__service-label">
-                                    Фильтр салонный (780 руб.)
-                                </label>
-                            </li>
-                            <li class="calc-form__services-item">
-                                <input type="checkbox" id="service5" name="service5" class="calc-form__service">
-                                <label for="service5" class="calc-form__service-label">
-                                    Смазочные материалы (0 руб.)
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="calc-form__required">
-                        <ul class="calc-form__required-list">
-                            <li class="calc-form__required-item">Проверка работы внешних световых приборов стоимость (0
-                                руб.)</li>
-                            <li class="calc-form__required-item">Проверка уровня рабочих жидкостей (0 руб.)</li>
-                            <li class="calc-form__required-item">Диагностика ходовой части (0 руб.)</li>
-                            <li class="calc-form__required-item">Проводимые работы (1210 руб.) **</li>
-                        </ul>
+                        <div class="calc-form__services">
+                            <h3>Выберите работы</h3>
+                            <ul class="calc-form__services-list">
+                                <li class="calc-form__services-item">
+                                    <input type="checkbox" id="service1" name="service1" class="calc-form__service">
+                                    <label for="service1" class="calc-form__service-label">
+                                        Масло моторное (2700 руб.) 4.5 л./шт.
+                                    </label>
+                                </li>
+                                <li class="calc-form__services-item">
+                                    <input type="checkbox" id="service2" name="service2" class="calc-form__service">
+                                    <label for="service2" class="calc-form__service-label">
+                                        Кольцо уплотнительное (64 руб.)
+                                    </label>
+                                </li>
+                                <li class="calc-form__services-item">
+                                    <input type="checkbox" id="service3" name="service3" class="calc-form__service">
+                                    <label for="service3" class="calc-form__service-label">
+                                        Фильтр масл (540 руб.)
+                                    </label>
+                                </li>
+                                <li class="calc-form__services-item">
+                                    <input type="checkbox" id="service4" name="service4" class="calc-form__service">
+                                    <label for="service4" class="calc-form__service-label">
+                                        Фильтр салонный (780 руб.)
+                                    </label>
+                                </li>
+                                <li class="calc-form__services-item">
+                                    <input type="checkbox" id="service5" name="service5" class="calc-form__service">
+                                    <label for="service5" class="calc-form__service-label">
+                                        Смазочные материалы (0 руб.)
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calc-form__required">
+                            <h3>Обязательные работы</h3>
+                            <ul class="calc-form__required-list">
+                                <li class="calc-form__required-item">Проверка работы внешних световых приборов стоимость
+                                    (0
+                                    руб.)</li>
+                                <li class="calc-form__required-item">Проверка уровня рабочих жидкостей (0 руб.)</li>
+                                <li class="calc-form__required-item">Диагностика ходовой части (0 руб.)</li>
+                                <li class="calc-form__required-item">Проводимые работы (1210 руб.) **</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="calc-form__result-panel">
                         <div class="calc-form__result">
                             <p>Стоимость ТО составит:</p>
-                            <p>4 726 руб**</p>
+                            <p><span>4 726 руб**</span></p>
                         </div>
                         <div class="calc-form__contatcs">
-                            <input type="text" name="client-name" id="client-name" placeholder="Ваше имя">
+                            <input type="text" name="client-name" id="client-name" class="calc-form__client-name" placeholder="Ваше имя">
                             <label for="client-name" class="visually-hidden">Ваше имя</label>
 
-                            <input type="tel" name="client-phone" id="client-phone" placeholder="Контактный телефон">
+                            <input type="tel" name="client-phone" id="client-phone" class="calc-form__client-phone" placeholder="Контактный телефон">
                             <label for="client-phone" class="visually-hidden">Контактный телефон</label>
 
-                            <button type="submit">Записаться на ТО</button>
+                            <button type="submit" class="calc-form__request-button">Записаться на ТО</button>
                         </div>
                     </div>
                     <div class="calc-form__footnotes">
