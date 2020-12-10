@@ -367,7 +367,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.visually-hidden, .search-panel__title, .for-clients h2 {
+.visually-hidden, .search-panel__title, .guarantee-banner h2, .for-clients h2 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1378,11 +1378,15 @@ img {
     background-size: contain;
     background-position: center; }
 
+.about-promo__banner {
+  width: 285px;
+  height: 520px; }
+
 .guarantee-banner {
   position: relative;
   width: 285px;
   height: 520px;
-  background-image: url("/img/banner/guarantee-save-bg.jpg");
+  padding-top: 85px;
   background-repeat: no-repeat;
   background-position: center; }
   .guarantee-banner p {
@@ -1395,20 +1399,30 @@ img {
     font-weight: 400;
     font-size: 18px;
     font-style: italic;
-    color: #ffffff; }
+    color: #ffffff;
+    z-index: 2; }
+
+.guarantee-banner__bg {
+  position: absolute;
+  top: 0;
+  width: 285px;
+  height: 520px;
+  z-index: -1; }
 
 .guarantee-banner__signature {
   position: absolute;
   right: 25px;
   width: 137px;
-  height: 71px; }
+  height: 71px;
+  z-index: 1; }
 
 .guarantee-banner__stamp {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 165px;
-  height: 105px; }
+  height: 105px;
+  z-index: 1; }
 
 .main__calc {
   margin-top: 70px; }
