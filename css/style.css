@@ -1501,12 +1501,18 @@ img {
     .calc-form__select select span {
       color: #1bace8; }
   .calc-form__select::after {
-    content: "\25BC";
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
+    width: 9px;
+    height: 100%;
     padding: 0 15px;
     color: #1bace8;
+    background-image: url(../img/icons/select_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px 8px;
     cursor: pointer;
     pointer-events: none; }
   .calc-form__select:last-child {
