@@ -1720,8 +1720,6 @@ img {
   width: 100%;
   min-width: 665px;
   background-color: #0296c3;
-  background-image: url("../img/banner/promo_banner_background.png"), linear-gradient(270deg, #0296c3 0%, #295787 60%);
-  background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
   box-shadow: 0 -2px 6px 0px rgba(0, 0, 0, 0.1);
@@ -1734,7 +1732,8 @@ img {
     height: 100%;
     border-right: 13px solid #092847;
     transform: skewX(15deg);
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    z-index: 2; }
 
 .promo-banner__promo-info {
   display: flex;
@@ -1766,31 +1765,52 @@ img {
       color: #ff4617; }
 
 .promo-banner__promo-description {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 625px;
-  min-width: 450px;
-  margin-left: 100px;
-  z-index: 2; }
+  width: 100%;
+  min-width: 385px;
+  z-index: 1; }
   .promo-banner__promo-description h2 {
     max-width: 370px;
     margin: 0;
+    margin-right: 30px;
     margin-bottom: 30px;
     padding: 0;
     font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 30px;
+    text-align: left;
     text-transform: uppercase;
     color: #ffffff; }
   .promo-banner__promo-description p {
     max-width: 520px;
     margin: 0;
+    margin-right: 30px;
     padding: 0;
     font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
+    text-align: left;
+    text-transform: none;
     color: #ffffff; }
+  .promo-banner__promo-description .promo-banner__promo-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* width: 625px; */
+    /* min-width: 450px; */
+    object-fit: cover;
+    z-index: -1; }
+  .promo-banner__promo-description .promo-banner__promo-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .promo-banner__promo-description .promo-banner__text-wrapper {
+    text-align: left;
+    margin-left: 100px; }
 
 .main__discounts {
   margin-top: 100px; }
