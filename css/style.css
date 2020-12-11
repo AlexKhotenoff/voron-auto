@@ -319,7 +319,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.visually-hidden, .search-panel__title, .guarantee-banner h2, .for-clients h2 {
+.visually-hidden, .search-panel__title, .guarantee-banner h2, .for-clients h2, .discounts__main h3 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1302,6 +1302,9 @@ img {
       margin: 0;
       padding: 0; }
 
+.about-promo__wrapper {
+  padding-right: 15px; }
+
 @keyframes dropdown-container-show {
   0% {
     max-height: 0px;
@@ -1842,11 +1845,12 @@ img {
   font-weight: 400;
   font-size: 14px;
   color: #333333; }
-  .discounts__main p strong {
-    font-family: "Roboto", "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #ff481a; }
+
+.discounts__main strong {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff481a; }
 
 .discounts__footnote p {
   margin: 0;
