@@ -1,52 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-style: normal;
-  src: local("Roboto"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-style: normal;
-  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-style: normal;
-  src: local("Roboto"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-style: normal;
-  src: local("Roboto"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2"); }
-
-@font-face {
-  font-family: "Roboto Condensed";
-  font-weight: 400;
-  font-style: normal;
-  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"); }
-
-@font-face {
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  font-style: normal;
-  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Bold.ttf") format("truetype"), url("../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"); }
-
-@font-face {
-  font-family: "Roboto Condensed";
-  font-weight: 400;
-  font-style: italic;
-  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Italic.ttf") format("truetype"), url("../fonts/RobotoCondensed-Italic.woff") format("woff"), url("../fonts/RobotoCondensed-Italic.woff2") format("woff2"); }
-
-@font-face {
-  font-family: "Ubuntu";
-  font-weight: 400;
-  font-style: normal;
-  src: local("Ubuntu"), url("../fonts/Ubuntu-Regular.ttf") format("truetype"), url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.woff2") format("woff2"); }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1350,11 +1302,22 @@ img {
       margin: 0;
       padding: 0; }
 
+@keyframes dropdown-container-show {
+  0% {
+    max-height: 0px;
+    opacity: 0; }
+  90% {
+    max-height: 1000px; }
+  100% {
+    opacity: 1; } }
+
 .about-promo__wrapper_extend {
   display: none; }
 
 .about-promo__wrapper_extend-show {
-  display: block; }
+  display: block;
+  animation: dropdown-container-show 1s ease-in;
+  overflow: hidden; }
 
 .about-promo__more-button {
   display: flex;
@@ -1383,6 +1346,8 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
+  .about-promo__more-button_active::after {
+    transform: rotate(180deg); }
 
 .about-promo__banner {
   width: 285px;

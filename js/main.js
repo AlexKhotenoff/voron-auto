@@ -12,37 +12,40 @@
 
 var more_button = document.querySelector(".about-promo__more-button");
 
-more_button.addEventListener("click", function () {
-    var extend_block = document.querySelector(".about-promo__wrapper_extend");
+if (more_button) {
+    more_button.addEventListener("click", function () {
+        var extend_block = document.querySelector(".about-promo__wrapper_extend");
 
-    if (extend_block) {
-        // extend_block.classList.toggle("about-promo__wrapper_extend-show");
+        if (extend_block) {
+            // extend_block.classList.toggle("about-promo__wrapper_extend-show");
 
-        if (!extend_block.classList.contains("about-promo__wrapper_extend-show")) {
-            extend_block.classList.toggle("about-promo__wrapper_extend-show");
-            more_button.textContent = "Скрыть";
+            if (!extend_block.classList.contains("about-promo__wrapper_extend-show")) {
+                extend_block.classList.toggle("about-promo__wrapper_extend-show");
+                more_button.textContent = "Скрыть";
+                this.classList.toggle("about-promo__more-button_active")
 
+            }
+            else {
+                extend_block.classList.toggle("about-promo__wrapper_extend-show");
+                more_button.textContent = "Читать подробнее";
+                this.classList.toggle("about-promo__more-button_active")
+            }
         }
-        else {
-            extend_block.classList.toggle("about-promo__wrapper_extend-show");
-            more_button.textContent = "Читать подробнее";
-
-        }
-    }
-});
+    });
+}
 
 var myHash = location.hash;
 location.hash = '';
 
 
 $(document).ready(function () {
-    $('.main-nav__item-wrapper a[href*="#"]').click(function(){
+    $('.main-nav__item-wrapper a[href*="#"]').click(function () {
         var hash = $(this).attr('href').split('#');
         $('html, body').animate({
-             scrollTop: $('#'+hash[1]).offset().top
-             }, 500, function() {
-          });       
-     })
+            scrollTop: $('#' + hash[1]).offset().top
+        }, 500, function () {
+        });
+    })
 
     if (myHash[1] !== undefined) {
         location.hash[0] = '';
