@@ -1,51 +1,51 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Roboto-Light";
+  font-family: "Roboto";
   font-weight: 300;
   font-style: normal;
-  src: local("Roboto-Light"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2"); }
+  src: local("Roboto"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
-  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2"); }
+  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Roboto-Medium";
+  font-family: "Roboto";
   font-weight: 500;
   font-style: normal;
-  src: local("Roboto-Medium"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2"); }
+  src: local("Roboto"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
-  src: local("Roboto-Bold"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2"); }
+  src: local("Roboto"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "RobotoCondensed-Regular";
+  font-family: "Roboto Condensed";
   font-weight: 400;
   font-style: normal;
-  src: local("RobotoCondensed-Regular"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"); }
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "RobotoCondensed-Bold";
+  font-family: "Roboto Condensed";
   font-weight: 700;
   font-style: normal;
-  src: local("RobotoCondensed-Bold"), url("../fonts/RobotoCondensed-Bold.ttf") format("truetype"), url("../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"); }
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Bold.ttf") format("truetype"), url("../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "RobotoCondensed-Italic";
+  font-family: "Roboto Condensed";
   font-weight: 400;
   font-style: italic;
-  src: local("RobotoCondensed-Italic"), url("../fonts/RobotoCondensed-Italic.ttf") format("truetype"), url("../fonts/RobotoCondensed-Italic.woff") format("woff"), url("../fonts/RobotoCondensed-Italic.woff2") format("woff2"); }
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Italic.ttf") format("truetype"), url("../fonts/RobotoCondensed-Italic.woff") format("woff"), url("../fonts/RobotoCondensed-Italic.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Ubuntu-Regular";
+  font-family: "Ubuntu";
   font-weight: 400;
   font-style: normal;
-  src: local("Ubuntu-Regular"), url("../fonts/Ubuntu-Regular.ttf") format("truetype"), url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.woff2") format("woff2"); }
+  src: local("Ubuntu"), url("../fonts/Ubuntu-Regular.ttf") format("truetype"), url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.woff2") format("woff2"); }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -778,7 +778,7 @@ img {
   justify-content: center;
   padding-left: 5px;
   padding-right: 5px;
-  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 80px;
   text-transform: uppercase;
@@ -856,7 +856,7 @@ img {
   padding: 0;
   padding-left: 30px;
   padding-right: 30px;
-  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 50px;
   font-size: 14px; }
@@ -1028,7 +1028,7 @@ img {
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 18px;
@@ -1037,7 +1037,7 @@ img {
   .header__logo-description p {
     margin: 0;
     padding: 0;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff; }
@@ -1053,7 +1053,7 @@ img {
   text-align: right; }
   .header__contacts a {
     margin-bottom: 10px;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 22px;
     font-style: normal;
@@ -1071,7 +1071,7 @@ img {
   padding: 0;
   border: none;
   border-bottom: 1px dashed #ffffff;
-  font-family: "Roboto-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -1099,7 +1099,7 @@ img {
     margin: 0;
     margin-bottom: 35px;
     padding: 0;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 24px;
     font-style: normal;
@@ -1114,7 +1114,7 @@ img {
     margin: 0;
     margin-bottom: 35px;
     padding: 0;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
@@ -1139,7 +1139,7 @@ img {
     padding-left: 45px;
     padding-right: 15px;
     border: none;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
@@ -1190,7 +1190,7 @@ img {
   padding: 0;
   padding-left: 50px;
   border: none;
-  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 45px;
@@ -1217,7 +1217,7 @@ img {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-  font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   text-align: center;
@@ -1271,7 +1271,7 @@ img {
   .services__link span {
     display: block;
     min-height: 40px;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
@@ -1282,7 +1282,7 @@ img {
   .services__link p {
     margin: 0;
     padding: 0;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: none;
@@ -1302,7 +1302,7 @@ img {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
     text-align: center;
@@ -1312,17 +1312,17 @@ img {
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #000000; }
-    .about-promo__promo p span {
-      display: inline-block;
-      font-family: "Roboto-Bold", "Open Sans", sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      text-align: left;
-      color: #ff4821; }
+  .about-promo__promo strong {
+    display: inline-block;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: left;
+    color: #ff4821; }
   .about-promo__promo ul {
     margin: 0;
     margin-left: 145px;
@@ -1334,7 +1334,7 @@ img {
     position: relative;
     margin: 0;
     padding: 0;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #000000; }
@@ -1350,6 +1350,12 @@ img {
       margin: 0;
       padding: 0; }
 
+.about-promo__wrapper_extend {
+  display: none; }
+
+.about-promo__wrapper_extend-show {
+  display: block; }
+
 .about-promo__more-button {
   display: flex;
   align-items: center;
@@ -1357,7 +1363,7 @@ img {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-decoration: underline;
@@ -1386,24 +1392,28 @@ img {
   position: relative;
   width: 285px;
   height: 520px;
-  padding-top: 85px;
   background-repeat: no-repeat;
   background-position: center; }
   .guarantee-banner p {
+    position: absolute;
     margin: 0;
+    margin-top: 85px;
     margin-bottom: 25px;
     margin-left: 25px;
     margin-right: 35px;
     padding: 0;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     font-style: italic;
     color: #ffffff;
     z-index: 2; }
+  .guarantee-banner a {
+    position: relative;
+    margin: 0;
+    padding: 0; }
 
 .guarantee-banner__bg {
-  position: absolute;
   top: 0;
   width: 285px;
   height: 520px;
@@ -1433,7 +1443,7 @@ img {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
@@ -1450,7 +1460,7 @@ img {
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
@@ -1477,7 +1487,7 @@ img {
   height: 40px;
   margin-bottom: 15px;
   border: 1px solid #d8d8d8;
-  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
@@ -1498,7 +1508,7 @@ img {
       color: #898989; }
     .calc-form__select select:invalid option:not(:first-child) {
       color: #000000; }
-    .calc-form__select select span {
+    .calc-form__select select b {
       color: #1bace8; }
   .calc-form__select::after {
     content: "";
@@ -1543,6 +1553,8 @@ img {
     width: 9px;
     height: 9px;
     background-color: #1bace8; }
+  .calc-form__service:focus + .calc-form__service-label::before {
+    border: 1px solid #000000; }
 
 .calc-form__service-label {
   display: flex;
@@ -1597,7 +1609,7 @@ img {
   max-width: 250px; }
   .calc-form__result p {
     margin-bottom: 20px;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
@@ -1615,7 +1627,7 @@ img {
   padding-left: 10px;
   padding-right: 10px;
   border: 1px solid #d8d8d8;
-  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
@@ -1631,7 +1643,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   border: none;
-  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 55px;
@@ -1652,7 +1664,7 @@ img {
   .calc-form__footnotes p {
     margin: 0;
     padding: 0;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #333333; }
@@ -1681,7 +1693,7 @@ img {
     margin: 0;
     padding: 0;
     margin-bottom: 25px;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
@@ -1690,7 +1702,7 @@ img {
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #000000; }
@@ -1702,7 +1714,7 @@ img {
     margin-top: auto;
     padding: 0;
     padding-left: 75px;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 55px;
@@ -1761,7 +1773,7 @@ img {
   .promo-banner__promo-text p {
     margin: 0;
     padding: 0;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 24px;
     text-transform: lowercase; }
@@ -1784,7 +1796,7 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
     padding: 0;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 30px;
     text-align: left;
@@ -1795,7 +1807,7 @@ img {
     margin: 0;
     margin-right: 30px;
     padding: 0;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-align: left;
@@ -1823,7 +1835,7 @@ img {
 
 .discounts h2 {
   margin-bottom: 50px;
-  font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
@@ -1847,26 +1859,26 @@ img {
   .discounts__header p {
     margin: 0;
     padding: 0;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #000000; }
     .discounts__header p:first-child {
       color: #858585; }
     .discounts__header p:last-child {
-      font-family: "Roboto-Bold", "Open Sans", sans-serif;
+      font-family: "Roboto", "Open Sans", sans-serif;
       font-weight: 700; }
 
 .discounts__main p {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  font-family: "Roboto-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #333333; }
   .discounts__main p strong {
-    font-family: "Roboto-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: #ff481a; }
@@ -1874,7 +1886,7 @@ img {
 .discounts__footnote p {
   margin: 0;
   padding: 0;
-  font-family: "Roboto-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #333333; }
@@ -1886,7 +1898,7 @@ img {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
@@ -1913,7 +1925,7 @@ img {
   .cars__item h3 {
     margin: 0;
     padding: 0;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #1e8bb7; }
@@ -1941,7 +1953,7 @@ img {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
@@ -1951,7 +1963,7 @@ img {
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #333333; }
@@ -1965,7 +1977,7 @@ img {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
@@ -2002,7 +2014,7 @@ img {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
-    font-family: "RobotoCondensed-Bold", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
@@ -2013,7 +2025,7 @@ img {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  font-family: "Roboto-Bold", "Open Sans", sans-serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #333333; }
@@ -2021,7 +2033,7 @@ img {
 .advantages__text-container p {
   margin: 0;
   padding: 0;
-  font-family: "Roboto-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #333333; }
@@ -2073,7 +2085,7 @@ img {
     padding: 0;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 24px;
     text-transform: uppercase;
@@ -2085,7 +2097,7 @@ img {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
-    font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
@@ -2095,14 +2107,14 @@ img {
   .main-footer__contacts p {
     margin: 0;
     padding: 0;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
     color: #333333; }
   .main-footer__contacts a {
     display: block;
-    font-family: "Roboto-Regular", "Open Sans", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
@@ -2154,7 +2166,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   border: none;
-  font-family: "RobotoCondensed-Regular", "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
@@ -2163,3 +2175,6 @@ img {
   color: #ffffff;
   background-color: #1bace8;
   cursor: pointer; }
+
+.main__container_inner {
+  display: block; }

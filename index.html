@@ -16,6 +16,12 @@
 
     <title>Сервис Субару</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="preload" as="style" onload="this.rel='stylesheet'">
+
 </head>
 
 <body class="page">
@@ -28,7 +34,7 @@
         <div class="header__wrap">
             <section class="header__top page__container">
                 <a href="https://voron-auto.ru" target="_blank" rel="noopener noreferrer" class="header__logo">
-                    <img src="../img/logo.png" width="109" height="47" alt="Логотип фирмы Voron Auto"
+                    <img src="./img/logo.png" width="109" height="47" alt="Логотип фирмы Voron Auto"
                         class="header__logo-img">
                 </a>
                 <div class="header__logo-description">
@@ -149,7 +155,7 @@
                     </li>
                 </ul>
                 <button type="button" class="main-nav__toggle">
-                    <div class="main-nav__sandvitch"></div>
+                    <span class="main-nav__sandvitch"></span>
                 </button>
             </nav>
             <section class="header__promo page__container">
@@ -205,7 +211,6 @@
                             <span>Ремонт двигателя</span>
                             <p>Тут будет краткое описание данного продукта</p>
                         </a>
-
                     </li>
                     <li class="services__item">
                         <a href="#" class="services__link">
@@ -294,25 +299,56 @@
                             Вовремя обратитесь к нам, не придется оплачивать дорогостоящий ремонт из-за игнорирования
                             мелких
                             проблем.
-                            <span>
+                            <strong>
                                 Не важно какой у Вас Subaru: Аутбек, Форестер, Импреза, Трибека или XV.
-                            </span>
+                            </strong>
                         </p>
-
+                    </div>
+                    <div class="about-promo__wrapper about-promo__wrapper_extend">
+                        <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis explicabo tenetur omnis est quos
+                        assumenda eos sit facilis ad commodi cupiditate eligendi culpa, nihil quasi nemo eius pariatur
+                        totam. Repellendus ipsa facilis quas aut eveniet, in eligendi, ut similique quis explicabo iure.
+                        Quaerat vero nam sequi laborum recusandae sunt ab itaque quas voluptatem deleniti delectus,
+                        tempora aut voluptas, provident explicabo tempore deserunt ipsam mollitia laboriosam corporis
+                        animi quae. Fugit quia dolore labore, odit minima, adipisci reprehenderit maxime dicta, repellat
+                        ullam exercitationem? Iure tenetur cum rem necessitatibus facere voluptatem nesciunt, odio,
+                        earum tempore fugit placeat repudiandae dolore porro consequatur magni deserunt! Quo aliquam
+                        harum inventore atque, mollitia eligendi ea? Et eos temporibus mollitia sequi dolores fugiat.
+                        Veniam iure magni consectetur, ut, inventore adipisci architecto ab vero deleniti iusto
+                        explicabo quis? Consequatur fuga rerum magni sapiente repudiandae suscipit harum blanditiis
+                        placeat voluptatibus enim ea praesentium, a deserunt minima deleniti ad quos. Nam doloremque
+                        excepturi, nostrum, delectus ad in earum, architecto facere animi iure dolores. Sit, quas natus?
+                        Aut eius voluptatem exercitationem dolores, fugit praesentium optio rem. Beatae magnam
+                        reprehenderit aliquid. Cupiditate iste modi labore necessitatibus exercitationem earum veniam
+                        alias doloremque facere odit, nostrum repudiandae quod atque! Corporis non nisi veritatis esse,
+                        deleniti earum neque aliquam animi. Voluptate nisi sit labore illum tenetur, natus quam cum
+                        repellat nesciunt blanditiis hic quo iusto impedit explicabo perspiciatis delectus qui excepturi
+                        suscipit quas animi est nemo? Odit quasi sunt explicabo, aperiam obcaecati est ratione corporis
+                        voluptatum praesentium. Eum voluptate numquam aliquam quasi fugit. Aspernatur vero praesentium
+                        quidem, at, ipsam corrupti non modi maxime fugiat odio autem asperiores. Sequi ea molestiae
+                        fugit doloribus deserunt expedita veritatis quae tempora, cupiditate, laborum voluptatibus
+                        voluptatum reiciendis officiis ipsa eligendi minus enim aspernatur magni labore! Cum placeat
+                        ipsa a optio earum laudantium veritatis qui accusamus tenetur inventore quasi, provident
+                        maiores. Modi. </p>
                     </div>
                     <button type="button" class="about-promo__more-button">Читать подробнее</button>
                 </section>
                 <section class="about-promo__banner guarantee-banner">
                     <h2>Гарантия качества</h2>
-                    <p>“Мы имеем право проводить
-                        ТО и ремонт, <strong>с сохранением заводской гарантии!</strong> При этом цены на услуги будут
-                        всегда ниже,
-                        чем у официальных диллеров.”</p>
-                    <img src="img/banner/guarantee-save-bg.jpg" alt="" srcset="" class="guarantee-banner__bg">
-                    <!-- <img src="img/banner/guarantee-save-sign.png" alt="Подпись" srcset=""
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <p>“Мы имеем право проводить
+                            ТО и ремонт, <strong>с сохранением заводской гарантии!</strong> При этом цены на услуги
+                            будут
+                            всегда ниже,
+                            чем у официальных диллеров.”</p>
+                        <img src="img/banner/guarantee-save-bg.jpg" alt="ТО с сохранением гарантии"
+                            class="guarantee-banner__bg">
+
+                        <!-- <img src="img/banner/guarantee-save-sign.png" alt="Подпись" srcset=""
                         class="guarantee-banner__signature">
                     <img src="img/banner/guarantee-save-stamp.png" alt="Гарантия качества" srcset=""
                         class="guarantee-banner__stamp"> -->
+                    </a>
                 </section>
             </section>
             <section class="main__calc service-calc">
@@ -336,7 +372,7 @@
                             </div>
                             <div class="calc-form__select">
                                 <select name="calc-service-type" id="calc-service-type" required>
-                                    <option selected disabled hidden value="">Выберите тип ТО<span>*</span>...</option>
+                                    <option selected disabled hidden value="">Выберите тип ТО<b>*</b>...</option>
                                     <option value="TO2">TO-2</option>
                                 </select>
                             </div>
@@ -655,12 +691,16 @@
                 <section class="gallery">
                     <h2>Фотогалерея</h2>
                     <button type="button" class="gallery__button"></button>
-                    <div class="gallery__slider owl-carousel  owl-theme">
+                    <div class="gallery__slider owl-carousel owl-theme">
                         <div class="gallery__slide">
-                            <img src="img/gallery/gallery_1.png" alt="Слайд">
+                            <a href="">
+                                <img src="img/gallery/gallery_1.png" alt="Слайд">
+                            </a>
                         </div>
                         <div class="gallery__slide">
-                            <img src="img/gallery/gallery_1.png" alt="Слайд">
+                            <a href="">
+                                <img src="img/gallery/gallery_1.png" alt="Слайд">
+                            </a>
                         </div>
                     </div>
                 </section>
