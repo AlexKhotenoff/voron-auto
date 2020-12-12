@@ -279,6 +279,30 @@
                                 X XXX руб.
                             </p>
                         </li>
+                        <li class="service-cost__item">
+                            <p class="service-cost__service-name">
+                                Название услуги
+                            </p>
+                            <p class="service-cost__cost">
+                                X XXX руб.
+                            </p>
+                        </li>
+                        <li class="service-cost__item">
+                            <p class="service-cost__service-name">
+                                Название услуги
+                            </p>
+                            <p class="service-cost__cost">
+                                X XXX руб.
+                            </p>
+                        </li>
+                        <li class="service-cost__item">
+                            <p class="service-cost__service-name">
+                                Название услуги
+                            </p>
+                            <p class="service-cost__cost">
+                                X XXX руб.
+                            </p>
+                        </li>
                     </ul>
                 </section>
             </div>
@@ -294,19 +318,19 @@
                             placeholder="Ваше имя">
                         <input type="text" name="car_model" id="car_model" class="service-request__car-model"
                             placeholder="Марка/модель Вашего автомобиля">
-                        <textarea name="service_reason" id="service_reason" cols="30" rows="10"
-                            placeholder="Причина обращения"></textarea>
+                        <textarea name="service_reason" id="service_reason" cols="30" rows="2"
+                            class="service-request__reason" placeholder="Причина обращения"></textarea>
                         <button type="submit" class="service-request__submit">
                             Отправить заявку
                         </button>
                     </form>
                 </section>
                 <section class="inner__calc service-calc">
-                    <h2>Калькулятор ТО</h2>
                     <form action="post" class="service-calc__form calc-form">
                         <div class="calc-form__wrapper">
+                        <h2>Калькулятор ТО</h2>
                             <div class="calc-form__about-auto">
-                                <h3>Укажите данные об автомобиле</h3>
+                                <!-- <h3>Укажите данные об автомобиле</h3> -->
                                 <div class="calc-form__select">
                                     <select name="calc-model" id="calc-model" required>
                                         <option selected disabled hidden value="">Выберите модель автомобиля...</option>
@@ -328,7 +352,7 @@
                                 </div>
                             </div>
                             <div class="calc-form__services">
-                                <h3>Выберите работы</h3>
+                                <!-- <h3>Выберите работы</h3> -->
                                 <ul class="calc-form__services-list">
                                     <li class="calc-form__services-item">
                                         <input type="checkbox" id="service1" name="service1" class="calc-form__service">
@@ -403,10 +427,10 @@
                         </div>
                     </form>
                 </section>
-                <section class="inner__bannner about-promo__banner guarantee-banner">
+                <section class="inner__banner guarantee-banner">
                     <h2>Гарантия качества</h2>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                        <p>“Мы имеем право проводить
+                        <p>“<span>Не забывайте!</span> Мы имеем право проводить
                             ТО и ремонт, <strong>с сохранением заводской гарантии!</strong> При этом цены на услуги
                             будут
                             всегда ниже,
@@ -419,108 +443,76 @@
         </div>
     </main>
     <footer class="inner__footer inner-footer">
-        <section class="inner-footer__wrapper">
-            <div class="inner-footer__text-container">
-                <p>&copy; 2013-2020. Voron-Auto</p>
-                <p>Не является публичной офертой</p>
-            </div>
-            <div class="inner-footer__text-container">
-                <h2>
-                    Диагностика, обслуживание, ремонт, плановые ТО всех моделей Subaru: Impreza, Legacy, Forester,
-                    Outback.
-                </h2>
-                <p>Автосервис "Ворон-Авто" &copy; 2020</p>
-            </div>
-        </section>
-        <section class="inner-footer__wrapper">
-            <h2>Мы в социальных сетях</h2>
-            <div class="inner-footer__socials-container">
-                <p>Присоединяйтесь:
-                </p>
-                <ul class="inner-footer__socials-list socials">
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30" height="30"
-                                class="socials__icon socials__icon_fb" fill="#1976d2">
-                                <defs />
-                                <path
-                                    d="M448 0H64C28.704 0 0 28.704 0 64v384c0 35.296 28.704 64 64 64h384c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z"
-                                    fill="#ffffff" />
-                                <path d="M432 256h-80v-64c0-17.664 14.336-16 32-16h32V96h-64c-53.024 0-96 42.976-96 
+        <div class="inner-footer__container page__container">
+            <section class="inner-footer__wrapper inner-footer__wrapper_copy">
+                <div class="inner-footer__text-container">
+                    <p>&copy; 2013-2020. Voron-Auto</p>
+                    <p>Не является публичной офертой</p>
+                </div>
+                <div class="inner-footer__text-container">
+                    <h2>
+                        Диагностика, обслуживание, ремонт, плановые ТО всех моделей Subaru: Impreza, Legacy, Forester,
+                        Outback.
+                    </h2>
+                    <p>Автосервис "Ворон-Авто" &copy; 2020</p>
+                </div>
+            </section>
+            <section class="inner-footer__wrapper inner-footer__wrapper_socials">
+                <div class="inner-footer__socials-container">
+                    <h2>Мы в социальных сетях</h2>
+                    <p>Присоединяйтесь:
+                    </p>
+                    <ul class="inner-footer__socials-list socials">
+                        <li class="socials__item">
+                            <a href="" class="socials__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30" height="30"
+                                    class="socials__icon socials__icon_fb" fill="#1976d2">
+                                    <defs />
+                                    <path
+                                        d="M448 0H64C28.704 0 0 28.704 0 64v384c0 35.296 28.704 64 64 64h384c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z"
+                                        fill="#ffffff" />
+                                    <path d="M432 256h-80v-64c0-17.664 14.336-16 32-16h32V96h-64c-53.024 0-96 42.976-96 
                                     96v64h-64v80h64v176h96V336h48l32-80z" fill="#1bace8" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="30" height="30"
-                            class="socials__icon socials__icon_inst" fill="ffffff">
-                                <defs />
-                                <path d="M36 31a5 5 0 01-5 5H5a5 5 0 01-5-5V5a5 5 0 015-5h26a5 5 0 015 5z"
-                                    fill="#ffffff" />
-                                <path
-                                    d="M25.893 18.633c-.736-.803-1.721-1.331-2.947-1.592l-.682-.105a4.28 4.28 
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="30" height="30"
+                                    class="socials__icon socials__icon_inst" fill="ffffff">
+                                    <defs />
+                                    <path d="M36 31a5 5 0 01-5 5H5a5 5 0 01-5-5V5a5 5 0 015-5h26a5 5 0 015 5z"
+                                        fill="#ffffff" />
+                                    <path
+                                        d="M25.893 18.633c-.736-.803-1.721-1.331-2.947-1.592l-.682-.105a4.28 4.28 
                                     0 002.006-1.684c.486-.762.73-1.628.73-2.606C25 8 18.904 8 17.446 8H11v20h8.059c1.381
                                      0 2.512-.127 3.406-.376a7.037 7.037 0 002.468-1.261 5.355 5.355 0 001.505-1.866c.375-.753.562-1.628.562-2.622
                                       0-1.359-.37-2.439-1.107-3.242zM16 12h1.822s2.181-.063 2.181 2-2.118 2-2.118 2H16zm2.957 
                                       12c-.496.021-1.39.008-2.688.008H16V19h3.043c.529.014 2.957-.08 2.957 2.46s-2.547 2.522-3.043 2.54z"
-                                    fill="#1bace8" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="inner-footer__socials-item">
-                        <a href="" class="inner-footer__socials-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="30" height="30"
-                                class="socials__icon socials__icon_inst" fill="#ffffff">
-                                <defs />
-                                <path fill="#1bace8"
-                                    d="M38.52.012h222.978C282.682.012 300 17.336 300 38.52v222.978c0 21.178-17.318 38.49-38.502 
+                                        fill="#1bace8" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="inner-footer__socials-item">
+                            <a href="" class="inner-footer__socials-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="30" height="30"
+                                    class="socials__icon socials__icon_inst" fill="#ffffff">
+                                    <defs />
+                                    <path fill="#ffffff"
+                                        d="M38.52.012h222.978C282.682.012 300 17.336 300 38.52v222.978c0 21.178-17.318 38.49-38.502 
                                     38.49H38.52c-21.184 0-38.52-17.313-38.52-38.49V38.52C0 17.336 17.336.012 38.52.012zm180.026
                                      33.317c-7.438 0-13.505 6.091-13.505 13.525v32.314c0 7.437 6.067 13.514 13.505 13.514h33.903c7.426
                                       0 13.506-6.077 13.506-13.514V46.854c0-7.434-6.08-13.525-13.506-13.525h-33.903zm47.538 93.539h-26.396a87.715
                                        87.715 0 013.86 25.759c0 49.882-41.766 90.34-93.266 90.34-51.487 0-93.254-40.458-93.254-90.34 0-8.963 1.37-17.584
                                         3.861-25.759H33.35V253.6c0 6.563 5.359 11.902 11.916 11.902h208.907c6.563 0 11.911-5.339 11.911-11.902V126.868zm-115.801-35.89c-33.26
                                          0-60.24 26.128-60.24 58.388 0 32.227 26.98 58.375 60.24 58.375 33.278 0 60.259-26.148 60.259-58.375 0-32.261-26.981-58.388-60.259-58.388z" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- <section class="main-footer__contacts page__container">
-            <div class="main-footer__contacts-wrap">
-                <h2>Контактная информация</h2>
-                <address>
-                    <div class="main-footer__address-container">
-                        <h3>Адрес</h3>
-                        <p>Загородное шоссе, д. 1 стр. 2</p>
-                        <p>Мы работаем ежедневно c 9:00 до 21:00</p>
-                    </div>
-                    <div class="main-footer__address-container">
-                        <h3>Контактные данные</h3>
-                        <ul class="main-footer__contact-list">
-                            <li>
-                                <img src="../img/icons/phone_icon.png" alt="Телефон">
-                                <a href="tel:+74959816597">+7 (495) 981-65-97</a>
-                            </li>
-                            <li>
-                                <img src="../img/icons/email_icon.png" alt="EMail">
-                                <a href="mailto:mail@voron-auto.ru">mail@voron-auto.ru</a>
-                            </li>
-                            <li>
-                                <img src="../img/icons/skype_icon.png" alt="Skype">
-                                <a href="skype:antonvoronauto">antonvoronauto</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button type="button" class="main-footer__sent-message">Отправить сообщение</button>
-                </address>
-            </div>
-            <div class="main-footer__contacts-wrap main-footer__contacts-wrap_links">
-                <a href="http://maps.yandex.ru/-/CVvjbR9r" target="_blank">Посмотреть на Яндекс картах</a>
-                <a href="https://goo.gl/maps/83GndXzDd5T2" target="_blank">Посмотреть на Google картах</a>
-            </div> -->
-        </section>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </footer>
 
     <script src="js/jquery-3.5.1.min.js"></script>
