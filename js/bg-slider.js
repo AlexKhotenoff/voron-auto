@@ -2,7 +2,7 @@ var slider = document.querySelector(".bg-slider");
 var slides_count = 4;
 var current_slide_index = 1;
 var next_slide_index = getRandomIntInclusive(1, slides_count);
-var assets_path = "../img/slider/";
+var assets_path = "./img/slider/";
 var current_slide_path = assets_path + 1 + ".jpg";
 var fade_interval = 3000;
 
