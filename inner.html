@@ -313,13 +313,13 @@
                         <!-- <input type="tel" name="phone_number" id="phone_number" class="service-request__phone"
                          placeholder="+7" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"> -->
                         <input type="tel" name="phone_number" id="phone_number" class="service-request__phone"
-                            placeholder="+7">
+                            placeholder="+7" required>
                         <input type="text" name="client_name" id="client_name" class="service-request__client-name"
-                            placeholder="Ваше имя">
+                            placeholder="Ваше имя" required>
                         <input type="text" name="car_model" id="car_model" class="service-request__car-model"
-                            placeholder="Марка/модель Вашего автомобиля">
+                            placeholder="Марка/модель Вашего автомобиля" required>
                         <textarea name="service_reason" id="service_reason" cols="30" rows="2"
-                            class="service-request__reason" placeholder="Причина обращения"></textarea>
+                            class="service-request__reason" placeholder="Причина обращения" required></textarea>
                         <button type="submit" class="service-request__submit">
                             Отправить заявку
                         </button>
@@ -328,7 +328,9 @@
                 <section class="inner__calc service-calc">
                     <form action="post" class="service-calc__form calc-form">
                         <div class="calc-form__wrapper">
-                        <h2>Калькулятор ТО</h2>
+                            <h2>Калькулятор ТО</h2>
+                            <p>* Цены представлены на оригинальные запчасти. Компания Ворон-Авто настоятельно
+                                рекомендует использовать оригинальные запчасти</p>
                             <div class="calc-form__about-auto">
                                 <!-- <h3>Укажите данные об автомобиле</h3> -->
                                 <div class="calc-form__select">
@@ -404,22 +406,8 @@
                                 <p>Стоимость ТО составит:</p>
                                 <p><span>4 726 руб**</span></p>
                             </div>
-                            <div class="calc-form__contatcs">
-                                <input type="text" name="client-name" id="client-name" class="calc-form__client-name"
-                                    placeholder="Ваше имя">
-                                <label for="client-name" class="visually-hidden">Ваше имя</label>
-
-                                <input type="tel" name="client-phone" id="client-phone" class="calc-form__client-phone"
-                                    placeholder="Контактный телефон">
-                                <label for="client-phone" class="visually-hidden">Контактный телефон</label>
-
-                                <button type="submit" class="calc-form__request-button">Записаться на ТО</button>
-                            </div>
                         </div>
                         <div class="calc-form__footnotes">
-                            <p class="calc-form__footnote">* Цены представлены на оригинальные запчасти. Компания
-                                Ворон-Авто
-                                настоятельно рекомендует использовать оригинальные запчасти</p>
                             <p class="calc-form__footnote">** Сумма работ указана из расчета замены всех указанных
                                 запчастей
                                 и
@@ -435,7 +423,7 @@
                             будут
                             всегда ниже,
                             чем у официальных диллеров.”</p>
-                        <img src="img/banner/guarantee-banner_small.jpg" alt="ТО с сохранением гарантии"
+                        <img src="img/banner/guarantee-banner_small.jpg" alt="ТО с сохранением гарантии" width="390" height="247"
                             class="guarantee-banner__bg">
                     </a>
                 </section>
