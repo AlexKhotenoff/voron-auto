@@ -157,8 +157,23 @@ function modal_init() {
     });
 }
 
-function modal_close(modal_window) {
-    if (modal_window.classList.contains('modal_show')) {
-        modal_window.classList.remove('modal_show');
-    }
-}
+// function modal_close(modal_window) {
+//     if (modal_window.classList.contains('modal_show')) {
+//         modal_window.classList.remove('modal_show');
+//     }
+// }
+
+function modal_close(modal_block) {
+
+    modal_block.classList.add("modal_close");
+  
+    setTimeout(function () {
+      if (modal_block.classList.contains("modal_show")) {
+        modal_block.classList.remove("modal_show");
+      }
+      if (modal_block.classList.contains("modal_close")) {
+        modal_block.classList.remove("modal_close");
+      }
+    }, 490);
+  }
+  
