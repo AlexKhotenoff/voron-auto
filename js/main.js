@@ -123,12 +123,14 @@ function modal_accepted() {
 // }
 
 function modal_show(open_button, modal_window_class) {
+    var body_block = document.querySelector('body');
     open_button.addEventListener('click', function () {
         var modal = document.querySelector(modal_window_class);
 
         if (modal) {
             if (!modal.classList.contains('modal_show')) {
                 modal.classList.add('modal_show');
+                body_block.classList.add('modal-active');
                 modal_init();
             }
         }
@@ -164,6 +166,7 @@ function modal_init() {
 // }
 
 function modal_close(modal_block) {
+    var body_block = document.querySelector('body');
 
     modal_block.classList.add("modal_close");
   
@@ -173,6 +176,7 @@ function modal_close(modal_block) {
       }
       if (modal_block.classList.contains("modal_close")) {
         modal_block.classList.remove("modal_close");
+        body_block.classList.remove('modal-active');
       }
     }, 490);
   }

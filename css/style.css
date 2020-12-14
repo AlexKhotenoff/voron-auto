@@ -953,6 +953,10 @@ img {
   font-size: 16px;
   color: #333333; }
 
+.modal-active {
+  overflow: hidden;
+  pointer-events: none; }
+
 .page__container {
   max-width: 1280px;
   margin: 0 auto;
@@ -2571,7 +2575,7 @@ form input.error {
 
 .modal_show .modal__container {
   animation-name: modal-win-show-animation;
-  animation-duration: 0.8s; }
+  animation-duration: 0.5s; }
 
 .modal_close .modal__container {
   animation-name: modal-win-close-animation;
