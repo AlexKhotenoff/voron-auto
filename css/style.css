@@ -329,6 +329,11 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: table; }
+
 @keyframes slide-fade {
   0% {
     opacity: 1; }
@@ -1562,6 +1567,8 @@ img {
   font-size: 14px;
   line-height: 15px;
   color: #333333; }
+  .calc-form__required-item span {
+    color: #1bace8; }
 
 .calc-form__result-panel {
   display: flex;
@@ -2155,7 +2162,9 @@ img {
   justify-content: space-between; }
 
 .inner__container {
-  max-width: 790px; }
+  width: 100%;
+  max-width: 790px;
+  padding-right: 15px; }
 
 .article h1 {
   margin: 0;
@@ -2186,24 +2195,69 @@ img {
   clear: both;
   display: table; }
 
+.article ul {
+  margin: 0;
+  margin-left: 145px;
+  margin-bottom: 10px;
+  padding: 0;
+  list-style: none;
+  text-align: left; }
+  .article ul ul {
+    margin-left: 25px; }
+
+.article li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000; }
+  .article li::before {
+    position: absolute;
+    left: -20px;
+    top: 4px;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #ff4821; }
+  .article li p {
+    margin: 0;
+    padding: 0; }
+
+.article a {
+  color: inherit; }
+  .article a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted; }
+
 .inner__cars {
   margin-top: 45px; }
+  .inner__cars .cars__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .inner__cars .cars__item {
+    width: calc((100% - 10px) / 3);
+    min-width: 250px;
+    margin-right: 5px; }
   .inner__cars .cars__item:nth-child(3n) {
     margin-right: 0; }
 
 .inner__costs {
   margin-top: 45px; }
 
-.service-cost h2 {
-  margin: 0;
-  margin-bottom: 35px;
-  padding: 0;
-  font-family: "Roboto Condensed", "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #333333; }
+.service-cost {
+  width: 100%; }
+  .service-cost h2 {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #333333; }
 
 .service-cost__list {
   margin: 0;
@@ -2221,12 +2275,11 @@ img {
 .service-cost__service-name,
 .service-cost__cost {
   margin: 0;
-  padding: 0;
+  padding: 15px;
   padding-left: 10px;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 40px;
   color: #333333; }
 
 .service-cost__service-name {
@@ -2273,11 +2326,9 @@ img {
   font-size: 14px;
   line-height: 40px;
   color: #333333; }
-  .service-request__phone:invalid,
-  .service-request__client-name:invalid,
-  .service-request__car-model:invalid,
-  .service-request__reason:invalid {
-    border-color: red; }
+
+form input.error {
+  border: 1px solid #ff0000; }
 
 .service-request__reason {
   margin-bottom: 25px; }
@@ -2429,3 +2480,75 @@ img {
   margin: 0;
   margin-right: 10px;
   padding: 0; }
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000078; }
+  .modal h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #333333; }
+  .modal p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333; }
+
+.modal__container {
+  width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  pointer-events: auto; }
+
+.modal__form {
+  display: flex;
+  flex-direction: column; }
+
+.modal textarea,
+.modal input {
+  margin-bottom: 20px;
+  padding: 10px; }
+
+.modal input {
+  width: 100%;
+  min-height: 45px; }
+
+.modal__button {
+  margin-right: 15px;
+  padding: 15px 20px;
+  border: none;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+  cursor: pointer; }
+  .modal__button_sent, .modal__button_close {
+    min-width: 200px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #1bace8; }
+
+.modal_show {
+  display: flex; }
