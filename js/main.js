@@ -86,11 +86,13 @@ $(document).ready(function () {
     }
 });
 
+// Modals
+
 var sent_message_button = document.querySelector('.main-footer__sent-message');
 var repair_request_button = document.querySelector('.header__button_repair');
 var evacuate_button = document.querySelector('.header__button_evacuator');
 var callback_button = document.querySelector('.header__callback');
-// var service_request_button = document.querySelector('.calc-form__request-button');
+var service_request_button = document.querySelector('.calc-form__request-button');
 
 if (sent_message_button) {
     modal_show(sent_message_button, '.modal_sent-message');
@@ -118,6 +120,7 @@ function modal_accepted() {
         }
     }
 }
+
 // if (service_request_button) {
 //     modal_show(service_request_button, '.modal_service-request');
 // }
@@ -180,4 +183,6 @@ function modal_close(modal_block) {
       }
     }, 490);
   }
+
+//   End of modals
   

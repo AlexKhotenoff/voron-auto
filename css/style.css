@@ -985,6 +985,7 @@ img {
   margin-right: 30px; }
   .header__logo-img {
     width: 109px;
+    min-width: 109px;
     height: 47px; }
 
 .header__logo-description {
@@ -1009,7 +1010,8 @@ img {
 
 .header__subaru-logo {
   width: 89px;
-  height: 49px; }
+  height: 49px;
+  margin-right: 30px; }
 
 .header__contacts {
   display: flex;
@@ -1035,16 +1037,17 @@ img {
   margin: 0;
   padding: 0;
   border: none;
-  border-bottom: 1px dashed #ffffff;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
   line-height: 18px;
   color: #ffffff;
   background-color: transparent;
   cursor: pointer; }
   .header__callback:hover {
-    border-color: transparent;
+    text-decoration: none;
     color: #1bace8; }
   .header__callback:active {
     color: #105a7a; }
@@ -1231,7 +1234,9 @@ img {
   display: block;
   min-height: 160px;
   padding-top: 15px;
+  padding-right: 5px;
   padding-bottom: 20px;
+  padding-left: 5px;
   text-align: center; }
   .services__link span {
     display: block;
@@ -1458,7 +1463,8 @@ img {
 .calc-form__services,
 .calc-form__required {
   width: calc(90% / 3);
-  min-width: 270px; }
+  min-width: 270px;
+  margin-right: 5px; }
 
 .calc-form__select {
   position: relative;
@@ -1589,7 +1595,8 @@ img {
   background-size: cover; }
 
 .calc-form__result {
-  max-width: 250px; }
+  max-width: 250px;
+  min-width: 190px; }
   .calc-form__result p {
     margin-bottom: 20px;
     font-family: "Roboto Condensed", "Open Sans", sans-serif;
@@ -1623,6 +1630,7 @@ img {
   margin-right: 35px; }
 
 .calc-form__request-button {
+  max-width: 280px;
   padding-left: 20px;
   padding-right: 20px;
   border: none;
@@ -2209,6 +2217,17 @@ img {
   .article ul ul {
     margin-left: 25px; }
 
+.article ol {
+  margin: 0;
+  margin-left: 145px;
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: left; }
+  .article ol ol {
+    margin-left: 25px; }
+  .article ol li::before {
+    background: none; }
+
 .article li {
   position: relative;
   margin: 0;
@@ -2484,6 +2503,83 @@ form input.error {
   margin: 0;
   margin-right: 10px;
   padding: 0; }
+
+.socials__icon_fb:hover .socials__fb-background {
+  fill: #0b516e; }
+
+.socials__icon_fb:hover .socials__fb-logo {
+  fill: #ffffff; }
+
+.socials__icon_vk:hover .socials__vk-background {
+  fill: #0b516e; }
+
+.socials__icon_vk:hover .socials__vk-logo {
+  fill: #ffffff; }
+
+.socials__icon_inst:hover .socials__inst-logo {
+  fill: #0b516e; }
+
+@media (max-width: 1199px) {
+  .header__top {
+    padding-top: 0px; }
+  .main .calc-form__result-panel {
+    justify-content: space-around; }
+  .main .calc-form__contatcs {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .main .calc-form__contatcs input[type="text"],
+    .main .calc-form__contatcs input[type="tel"] {
+      margin-bottom: 5px; }
+  .for-clients__article {
+    max-width: 45%; }
+  .discounts__item {
+    max-width: 45%; } }
+
+@media (max-width: 959px) {
+  .header__top {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px; }
+  .header__contacts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: unset;
+    text-align: center; }
+  .main-nav.page__container {
+    padding-right: 20px; }
+  .header__logo-description {
+    margin-right: 20px; }
+  .services__item {
+    width: calc((100% - 20px) / 2);
+    margin-bottom: 20px; }
+  .about-promo__promo ul {
+    margin-left: 60px; }
+  .main .calc-form__result-panel {
+    margin-top: 25px; }
+  .main .calc-form__about-auto,
+  .main .calc-form__services,
+  .main .calc-form__required {
+    width: calc(90% / 2);
+    margin-right: 5px;
+    margin-bottom: 20px; }
+  .for-clients__article {
+    max-width: 100%;
+    margin-bottom: 40px; }
+    .for-clients__article h3 {
+      min-height: unset; }
+    .for-clients__article:last-child {
+      margin-bottom: 0; }
+  .promo-banner::before {
+    width: 400px;
+    transform: skewX(0deg);
+    z-index: 2; }
+  .promo-banner__promo-description .promo-banner__text-wrapper {
+    margin-left: 30px; }
+  .discounts__item {
+    max-width: 100%; } }
 
 /* Modals */
 @keyframes modal-show-animation {
