@@ -121,9 +121,9 @@ function modal_accepted() {
     }
 }
 
-// if (service_request_button) {
-//     modal_show(service_request_button, '.modal_service-request');
-// }
+if (service_request_button) {
+    // modal_show(service_request_button, '.modal_service-request');
+}
 
 function modal_show(open_button, modal_window_class) {
     var body_block = document.querySelector('body');
@@ -145,9 +145,16 @@ function modal_init() {
 
     if (active_modal) {
         var cancel_button = active_modal.querySelector('.modal__button_cancel');
+        var close_button = active_modal.querySelector('.modal__button_close');
 
         if (cancel_button) {
             cancel_button.addEventListener('click', function () {
+                modal_close(active_modal);
+            });
+        }
+
+        if (close_button) {
+            close_button.addEventListener('click', function () {
                 modal_close(active_modal);
             });
         }
