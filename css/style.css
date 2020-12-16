@@ -329,6 +329,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+._hidden {
+  display: none; }
+
 .clearfix:after {
   content: " ";
   clear: both;
@@ -613,7 +616,8 @@ img {
   background: #ff4617; }
 
 .main-nav {
-  position: relative; }
+  position: relative;
+  min-height: 80px; }
 
 @keyframes nav-list-open {
   0% {
@@ -901,6 +905,10 @@ img {
   animation: sandvitch-bottom-off 0.5s normal; }
 
 @media (max-width: 767px) {
+  .main-nav {
+    min-height: 80px;
+    display: flex;
+    align-items: center; }
   .main-nav__list {
     display: none; }
   .main-nav__list_mobile {
@@ -1101,6 +1109,9 @@ img {
     .header__button-list .header__button-item:last-child {
       margin-bottom: 0; }
   .header__button-list .header__button {
+    display: flex;
+    align-items: center;
+    position: relative;
     margin: 0;
     margin-right: 20px;
     padding: 0;
@@ -1118,18 +1129,26 @@ img {
     color: #ffffff;
     background-color: #1bace8;
     background-repeat: no-repeat;
-    background-position: 15px center;
     background-size: auto 25px;
     cursor: pointer; }
     .header__button-list .header__button:hover {
       text-decoration: none; }
-    .header__button-list .header__button_repair {
+    .header__button-list .header__button::before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      height: 25px;
+      width: 40px;
+      background-repeat: no-repeat;
+      background-size: auto 25px; }
+    .header__button-list .header__button_repair::before {
       background-image: url("../img/icons/repair_icon.png"); }
-    .header__button-list .header__button_service-calc {
+    .header__button-list .header__button_service-calc::before {
       background-image: url("../img/icons/service_calc_icon.png"); }
     .header__button-list .header__button_evacuator {
-      padding-left: 60px;
-      background-image: url("../img/icons/evaсuator_icon.png"); }
+      padding-left: 60px; }
+      .header__button-list .header__button_evacuator::before {
+        background-image: url("../img/icons/evaсuator_icon.png"); }
     .header__button-list .header__button_red {
       background-color: #a7402a; }
 
@@ -1906,6 +1925,7 @@ img {
 
 .cars__item {
   width: 260px;
+  min-width: 260px;
   height: 190px;
   margin: 0;
   margin-right: 5px;
@@ -2041,7 +2061,7 @@ img {
 
 .advantages__item {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   margin: 0;
   margin-bottom: 45px;
   padding: 0;
@@ -2062,8 +2082,7 @@ img {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 500px;
-  max-height: 485px !important;
+  height: 485px;
   z-index: 1; }
 
 .main-footer__contacts {
@@ -2278,7 +2297,6 @@ img {
     font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
-    line-height: 18px;
     text-transform: uppercase;
     color: #333333; }
 
@@ -2382,7 +2400,6 @@ form input.error {
     font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 24px;
-    line-height: 18px;
     text-transform: uppercase;
     color: #333333; }
   .inner__calc p {
@@ -2536,7 +2553,19 @@ form input.error {
   .for-clients__article {
     max-width: 45%; }
   .discounts__item {
-    max-width: 45%; } }
+    max-width: 45%; }
+  .cars__item {
+    width: calc((100% - 10px) / 3);
+    min-width: 260px; }
+    .cars__item:nth-child(3n) {
+      margin-right: 0; }
+  .inner .cars__item {
+    width: calc((100% - 5px) / 2);
+    min-width: 260px; }
+    .inner .cars__item:nth-child(3n) {
+      margin-right: 5px; }
+    .inner .cars__item:nth-child(2n) {
+      margin-right: 0; } }
 
 @media (max-width: 959px) {
   .header__top {
@@ -2565,6 +2594,12 @@ form input.error {
     width: calc(90% / 2);
     margin-right: 5px;
     margin-bottom: 20px; }
+  .main .calc-form__footnotes {
+    flex-direction: column; }
+  .main .calc-form__footnote {
+    margin-bottom: 10px; }
+    .main .calc-form__footnote:last-child {
+      margin-bottom: 0; }
   .for-clients__article {
     max-width: 100%;
     margin-bottom: 40px; }
@@ -2579,7 +2614,176 @@ form input.error {
   .promo-banner__promo-description .promo-banner__text-wrapper {
     margin-left: 30px; }
   .discounts__item {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .cars__item {
+    width: calc((100% - 5px) / 2);
+    min-width: 260px; }
+    .cars__item:nth-child(3n) {
+      margin-right: 5px; }
+    .cars__item:nth-child(2n) {
+      margin-right: 0; }
+  .advantages__item {
+    width: calc((100% - 60px) / 2); }
+  .main-footer__contacts-wrap_links {
+    flex-direction: column;
+    padding: 10px 15px; }
+    .main-footer__contacts-wrap_links a {
+      margin-bottom: 10px; }
+      .main-footer__contacts-wrap_links a:last-child {
+        margin-bottom: 0; }
+  .inner .cars__item {
+    width: 100%;
+    min-width: 260px;
+    margin-right: 0; }
+    .inner .cars__item:nth-child(3n) {
+      margin-right: 0; }
+    .inner .cars__item:nth-child(2n) {
+      margin-right: 0; } }
+
+@media (max-width: 767px) {
+  .header__logo {
+    margin-right: 10px; }
+  .header__logo-description {
+    margin-right: 10px; }
+  .header__subaru-logo {
+    margin-right: 0px; }
+  .header__button-list .header__button {
+    width: 265px; }
+  .promo-banner {
+    flex-direction: column;
+    min-width: 300px; }
+    .promo-banner::before {
+      display: none; }
+  .promo-banner__promo-info {
+    flex-direction: column;
+    min-width: 335px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 13px solid #092847;
+    background-color: #fff; }
+  .promo-banner__promo-description .promo-banner__text-wrapper {
+    margin-left: 0px;
+    padding: 30px; }
+  .promo-banner__promo-description .promo-banner__promo-text {
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .promo-banner__promo-description h2 {
+    max-width: none;
+    margin-right: 0; }
+  .promo-banner__promo-description p {
+    margin-right: 0; }
+  .main .calc-form__wrapper {
+    justify-content: center; }
+  .main .calc-form__about-auto,
+  .main .calc-form__services,
+  .main .calc-form__required {
+    width: 100%;
+    max-width: 430px;
+    min-width: 305px; }
+  .inner__aside-panel {
+    align-self: center;
+    width: 80%;
+    margin-top: 20px; }
+  .inner__wrapper {
+    flex-direction: column; }
+  .inner .cars__item {
+    width: calc((100% - 5px) / 2);
+    min-width: 260px;
+    margin-right: 5px; }
+    .inner .cars__item:nth-child(3n) {
+      margin-right: 5px; }
+    .inner .cars__item:nth-child(2n) {
+      margin-right: 0; } }
+
+@media (max-width: 575px) {
+  .page__container {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .header__logo {
+    margin-right: 0; }
+  .header__logo-description {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+    text-align: center; }
+  .header__subaru-logo {
+    display: none; }
+  .about-promo {
+    flex-direction: column;
+    align-items: center; }
+    .about-promo__promo {
+      width: 100%; }
+    .about-promo__banner {
+      margin-top: 40px; }
+  .main .calc-form__about-auto,
+  .main .calc-form__services,
+  .main .calc-form__required {
+    width: 100%;
+    min-width: unset;
+    margin-right: 0; }
+  .main .calc-form__select {
+    min-width: unset; }
+  .main .calc-form__contatcs {
+    align-items: center;
+    width: 100%; }
+  .main .calc-form__contatcs input[type="text"],
+  .main .calc-form__contatcs input[type="tel"] {
+    width: 280px;
+    margin-right: 0; }
+  .main .calc-form__request-button {
+    width: 280px; }
+  .cars__item {
+    width: 100%;
+    min-width: 260px;
+    margin-right: 0; }
+    .cars__item:nth-child(3n) {
+      margin-right: 0; }
+  .main__container_about-company {
+    flex-direction: column; }
+    .main__container_about-company .about-company {
+      width: 100%; }
+    .main__container_about-company .gallery {
+      padding-top: 40px;
+      width: 100%;
+      height: 300px; }
+  .advantages__item {
+    width: 100%; }
+  .main-footer__contacts {
+    flex-direction: column;
+    width: 100%; }
+  .main-footer__contacts-wrap_links {
+    flex-direction: row;
+    padding: 5px 15px;
+    margin-bottom: 0; }
+  .map {
+    height: 535px;
+    max-height: unset; }
+  .inner__container {
+    padding-right: 0; }
+  .service-cost__service-name {
+    max-width: 75%; }
+  .service-cost__cost {
+    max-width: 25%; }
+  .inner__aside-panel {
+    width: 100%;
+    margin-top: 20px; }
+  .inner .calc-form__about-auto {
+    margin-right: 0; }
+  .inner .cars__item {
+    width: 100%;
+    min-width: 260px;
+    margin-right: 0; }
+    .inner .cars__item:nth-child(3n) {
+      margin-right: 0; }
+  .inner-footer__container {
+    flex-direction: column; }
+  .inner-footer__wrapper {
+    width: 100%; }
+    .inner-footer__wrapper_socials {
+      margin-top: 20px; }
+  .inner-footer__socials-container {
+    justify-content: flex-end; } }
 
 /* Modals */
 @keyframes modal-show-animation {
@@ -2711,3 +2915,17 @@ form input.error {
 
 .modal_show {
   display: flex; }
+
+.to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99999; }
+  .to-top__button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: rgba(27, 172, 232, 0.65); }
+  .to-top_show {
+    display: block; }

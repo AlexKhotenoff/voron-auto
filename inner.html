@@ -503,6 +503,134 @@
         </div>
     </footer>
 
+    <section class="modal modal_sent-message">
+        <div class="modal__container">
+            <h2>
+                Отправить сообщение в Voron-Auto
+            </h2>
+            <form action="" method="POST" class="modal__form">
+                <textarea name="message" id="message" cols="30" rows="5" class="modal__message" placeholder="Сообщение"
+                    required></textarea>
+                <input type="text" name="client_name" id="client_name" class="modal__client-name" placeholder="Ваше имя"
+                    required>
+                <input type="email" name="client_email" id="client_email" class="modal__client-email"
+                    placeholder="Ваш Email" required>
+                <div class="modal__button-wrapper">
+                    <button type="submit" class="modal__button modal__button_sent">Отправить</button>
+                    <button type="button" class="modal__button modal__button_cancel">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal modal_repair-request">
+        <div class="modal__container">
+            <h2>
+                Подать заявку на ремонт
+            </h2>
+            <form action="" method="POST" class="modal__form">
+                <input type="text" name="client_name" id="client_name" class="modal__client-name" placeholder="Ваше имя"
+                    required>
+                <input type="tel" name="phone_number" id="phone_number" class="modal__phone"
+                    placeholder="+7 xxx xxx-xxxx" required>
+                <input type="text" name="car_model" id="car_model" class="modal__car-model"
+                    placeholder="Марка/модель Вашего автомобиля" required>
+                <textarea name="service_reason" id="service_reason" cols="30" rows="2" class="modal__reason"
+                    placeholder="Причина обращения" required></textarea>
+                <div class="modal__button-wrapper">
+                    <button type="submit" class="modal__button modal__button_sent">Отправить</button>
+                    <button type="button" class="modal__button modal__button_cancel">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal modal_evacuate">
+        <div class="modal__container">
+            <h2>
+                Вызвать эвакуатор
+            </h2>
+            <form action="" method="POST" class="modal__form">
+                <input type="tel" name="phone_number" id="phone_number" class="modal__phone"
+                    placeholder="+7 xxx xxx-xxxx" required>
+                <input type="text" name="client_name" id="client_name" class="modal__client-name" placeholder="Ваше имя"
+                    required>
+                <input type="text" name="evacuate_location" id="evacuate_location" class="modal__evacuate-location"
+                    placeholder="Откуда забрать" required>
+                <div class="modal__button-wrapper">
+                    <button type="submit" class="modal__button modal__button_sent">Отправить</button>
+                    <button type="button" class="modal__button modal__button_cancel">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal modal_callback">
+        <div class="modal__container">
+            <h2>
+                Заказать обратный звонок
+            </h2>
+            <form action="" method="POST" class="modal__form">
+                <input type="tel" name="phone_number" id="phone_number" class="modal__phone"
+                    placeholder="+7 xxx xxx-xxxx" required>
+                <input type="text" name="client_name" id="client_name" class="modal__client-name" placeholder="Ваше имя"
+                    required>
+                <div class="modal__button-wrapper">
+                    <button type="submit" class="modal__button modal__button_sent">Отправить</button>
+                    <button type="button" class="modal__button modal__button_cancel">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal modal_service-request">
+        <div class="modal__container">
+            <h2>
+                Записаться на ТО
+            </h2>
+            <form action="" method="POST" class="modal__form">
+                <input type="text" name="client_name" id="client_name" class="modal__client-name" placeholder="Ваше имя"
+                    required>
+                <input type="tel" name="phone_number" id="phone_number" class="modal__phone"
+                    placeholder="+7 xxx xxx-xxxx" required>
+                <input type="text" name="car_model" id="car_model" class="modal__car-model"
+                    placeholder="Марка/модель Вашего автомобиля" required>
+                <textarea name="service_reason" id="service_reason" cols="30" rows="2" class="modal__reason"
+                    placeholder="Причина обращения" required></textarea>
+                <div class="modal__button-wrapper">
+                    <button type="submit" class="modal__button modal__button_sent">Отправить</button>
+                    <button type="button" class="modal__button modal__button_cancel">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal modal_accept">
+        <div class="modal__container">
+            <h2>
+                Спасибо!
+            </h2>
+            <p>Ваша заявка получена. Менеджер свяжется с Вами в ближайшее время</p>
+            <div class="modal__button-wrapper">
+                <button type="button" class="modal__button modal__button_close">Закрыть</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="to-top">
+        <button type="button" class="to-top__button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.997 511.997" fill="#ffffff">
+                <path
+                    d="M508.707 365.621L263.374 130.954c-4.125-3.938-10.625-3.938-14.75 
+                    0L3.29 365.621a10.66 10.66 0 00-2.521 11.677 10.649 10.649 0 
+                    009.896 6.698h42.667c2.729 0 5.354-1.042 
+                    7.333-2.927l195.333-185.042 195.333 185.042a10.623 10.623 
+                    0 007.333 2.927h42.667c4.354 0 8.281-2.646 9.896-6.698a10.658 
+                    10.658 0 00-2.52-11.677z" />
+            </svg>
+        </button>
+    </div>
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <!-- <script src="js/owl.carousel.js"></script> -->
     <!-- <script src="js/map.js"></script> -->

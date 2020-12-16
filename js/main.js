@@ -1,15 +1,3 @@
-// $(document).ready(function () {
-//     $(".owl-carousel").owlCarousel(
-//         {
-//             loop: true,
-//             margin: 10,
-//             // nav: true,
-//             items: 1,
-//             dots: true,
-//         }
-//     );
-// });
-
 var more_button = document.querySelector(".about-promo__more-button");
 
 if (more_button) {
@@ -37,7 +25,6 @@ if (more_button) {
 var myHash = location.hash;
 location.hash = '';
 
-
 $(document).ready(function () {
     $('.main-nav__item-wrapper a[href*="#"]').click(function () {
         var hash = $(this).attr('href').split('#');
@@ -56,15 +43,16 @@ $(document).ready(function () {
         if (jQuery.Lazy) {
             $('.lazy').Lazy();
         }
+
+        $("input[name='phone_number']").mask("+7 999 999-9999", { autoclear: false });
+        AjaxForm.initialize({
+            "assetsUrl": "\/assets\/components\/ajaxform\/",
+            "actionUrl": "\/assets\/components\/ajaxform\/action.php",
+            "closeMessage": "",
+            "formSelector": "form.ajax_form",
+            "pageId": 1
+        });
     }
-    $("input[name='phone_number']").mask("+7 999 999-9999", { autoclear: false });
-    AjaxForm.initialize({
-        "assetsUrl": "\/assets\/components\/ajaxform\/",
-        "actionUrl": "\/assets\/components\/ajaxform\/action.php",
-        "closeMessage": "",
-        "formSelector": "form.ajax_form",
-        "pageId": 1
-    });
     var owl = $(".owl-carousel").owlCarousel(
         {
             loop: true,
@@ -84,7 +72,71 @@ $(document).ready(function () {
             })
         }
     }
+
+    if (window.location.hostname != '127.0.0.1') {
+
+        if (jQuery.Lazy) {
+            owl.on('changed.owl.carousel', function (event) {
+                $('.lazy[data-src^="/"]').Lazy();
+            })
+        }
+        $('a.lightcase').lightcase({
+            showSequenceInfo: false,
+            swipe: true,
+            fullscreenModeForMobile: true,
+            showTitle: false,
+            inline: {
+                showCaption: false
+            }
+        });
+    }
 });
+
+//To top
+var to_top = document.querySelector('.to-top');
+
+if (to_top) {
+    var top_button = to_top.querySelector('.to-top__button');
+
+    top_button.addEventListener('click', function (){
+        scrollTo(document.querySelector('header'));
+    });
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            if (!to_top.classList.contains('to-top_show')) {
+                to_top.classList.add('to-top_show');
+            }
+        }
+        else {
+            if (to_top.classList.contains('to-top_show')) {
+                to_top.classList.remove('to-top_show');
+            }
+        }
+    });
+}
+
+//
+
+//Scroll into view
+var calc_button = document.querySelector('.header__button_service-calc');
+
+if (calc_button) {
+    calc_button.addEventListener('click', function () {
+        scrollTo(document.querySelector('.service-calc'));
+    });
+}
+
+function scrollTo(target_block) {
+    if (target_block) {
+        target_block.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+// End of scroll
 
 // Modals
 
@@ -121,9 +173,9 @@ function modal_accepted() {
     }
 }
 
-if (service_request_button) {
-    // modal_show(service_request_button, '.modal_service-request');
-}
+// if (service_request_button) {
+// modal_show(service_request_button, '.modal_service-request');
+// }
 
 function modal_show(open_button, modal_window_class) {
     var body_block = document.querySelector('body');
@@ -179,17 +231,16 @@ function modal_close(modal_block) {
     var body_block = document.querySelector('body');
 
     modal_block.classList.add("modal_close");
-  
+
     setTimeout(function () {
-      if (modal_block.classList.contains("modal_show")) {
-        modal_block.classList.remove("modal_show");
-      }
-      if (modal_block.classList.contains("modal_close")) {
-        modal_block.classList.remove("modal_close");
-        body_block.classList.remove('modal-active');
-      }
+        if (modal_block.classList.contains("modal_show")) {
+            modal_block.classList.remove("modal_show");
+        }
+        if (modal_block.classList.contains("modal_close")) {
+            modal_block.classList.remove("modal_close");
+            body_block.classList.remove('modal-active');
+        }
     }, 490);
-  }
+}
 
 //   End of modals
-  
