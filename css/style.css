@@ -319,7 +319,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.visually-hidden, .search-panel__title, .about-promo > h2, .guarantee-banner h2, .for-clients h2, .discounts__main h3, .inner-footer__socials-container h2 {
+.visually-hidden, .search-panel__title, .about-promo > h2, .guarantee-banner h2, .for-clients h2, .discounts__article > h3, .discounts__main h3, .inner-footer__socials-container h2 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -2753,7 +2753,8 @@ form input.error {
   .main-nav.page__container {
     padding-right: 20px; }
   .discounts__item {
-    max-width: 100%; }
+    max-width: 100%;
+    margin-bottom: 30px; }
   .cars__item {
     width: calc((100% - 5px) / 2);
     min-width: 260px; }
