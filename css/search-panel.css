@@ -1,0 +1,139 @@
+.search-panel {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #1bace8;
+}
+
+.search-panel__container {
+    width: 100%;
+}
+
+.search-panel__form {
+    display: flex;
+    align-items: center;
+}
+
+.search-panel__input {
+    width: 100%;
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+    padding-left: 50px;
+    border: none;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 45px;
+    background-image: url("../img/icons/search_input_icon.png");
+    background-size: 29px 32px;
+    background-position: 7px center;
+    background-repeat: no-repeat;
+}
+
+.search-panel__button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/icons/search_icon.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.main__services {
+    margin-top: 40px;
+}
+
+.services h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100% - 60px) / 4);
+    min-height: 160px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+}
+.services__item:last-child {
+    margin-right: 0;
+}
+.services__item_engine {
+    background-image: url("../img/icons/engine_repair_icon.png");
+    background-size: 46px 40px;
+}
+.services__item_chassis {
+    background-image: url("../img/icons/chassis_repair_icon.png");
+    background-size: 40px;
+}
+.services__item_electronic {
+    background-image: url("../img/icons/electronic_repair_icon.png");
+    background-size: 42px 40px;
+}
+.services__item_other {
+    background-image: url("../img/icons/other_repair_icon.png");
+    background-size: 34px 40px;
+}
+.services__item img {
+    width: auto;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.services__link {
+    display: block;
+    min-height: 160px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    text-align: center;
+}
+.services__link span {
+    display: block;
+    min-height: 40px;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1bace8;
+}
+.services__link:hover span {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.services__link p {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: none;
+    color: #000000;
+}

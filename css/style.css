@@ -319,7 +319,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.visually-hidden, .search-panel__title, .guarantee-banner h2, .for-clients h2, .discounts__main h3, .inner-footer__socials-container h2 {
+.visually-hidden, .search-panel__title, .about-promo > h2, .guarantee-banner h2, .for-clients h2, .discounts__main h3, .inner-footer__socials-container h2 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -696,6 +696,8 @@ img {
     animation: none; }
   .main-nav__item_active > .main-nav__link {
     color: #1bace8; }
+  .main-nav__item_active .main-nav__item-wrapper .main-nav__link {
+    color: #1bace8; }
   .main-nav__item_sub-menu-arrow {
     display: flex;
     align-items: center; }
@@ -712,7 +714,7 @@ img {
 
 .main-nav__item-wrapper {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between; }
 
 .main-nav__button {
@@ -803,7 +805,7 @@ img {
     border: none;
     background-color: #1bace8;
     opacity: 0;
-    transition: all 0.3s; }
+    transition: none; }
   .main-nav__item_sub-menu:hover::before {
     width: 100%;
     animation: none;
@@ -954,23 +956,6 @@ img {
   .main-nav__list_mobile {
     width: 100vw; } }
 
-.page {
-  width: 100%;
-  font-family: "Roboto Condensed", "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #333333; }
-
-.modal-active {
-  overflow: hidden;
-  pointer-events: none; }
-
-.page__container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px; }
-
 .header {
   position: relative;
   width: 100%;
@@ -998,7 +983,7 @@ img {
 
 .header__logo-description {
   margin-right: 40px; }
-  .header__logo-description h2 {
+  .header__logo-description h1 {
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
@@ -1059,11 +1044,6 @@ img {
     color: #1bace8; }
   .header__callback:active {
     color: #105a7a; }
-
-.main-nav {
-  position: relative;
-  max-width: 1280px;
-  background-color: rgba(255, 255, 255, 0.781); }
 
 .header__promo {
   position: relative;
@@ -1152,9 +1132,43 @@ img {
     .header__button-list .header__button_red {
       background-color: #a7402a; }
 
-.main__container {
-  display: flex;
-  justify-content: space-between; }
+@media (max-width: 1199px) {
+  .header__top {
+    padding-top: 0px; } }
+
+@media (max-width: 959px) {
+  .header__top {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px; }
+  .header__contacts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: unset;
+    text-align: center; }
+  .header__logo-description {
+    margin-right: 20px; } }
+
+@media (max-width: 767px) {
+  .header__logo {
+    margin-right: 10px; }
+  .header__logo-description {
+    margin-right: 10px; }
+  .header__subaru-logo {
+    margin-right: 0px; }
+  .header__button-list .header__button {
+    width: 265px; } }
+
+@media (max-width: 575px) {
+  .header__logo {
+    margin-right: 0; }
+  .header__logo-description {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+    text-align: center; }
+  .header__subaru-logo {
+    display: none; } }
 
 .search-panel {
   display: flex;
@@ -1196,9 +1210,6 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer; }
-
-.main__services {
-  margin-top: 40px; }
 
 .services h2 {
   margin: 0;
@@ -1277,8 +1288,10 @@ img {
     text-transform: none;
     color: #000000; }
 
-.main__about-promo {
-  margin-top: 60px; }
+@media (max-width: 959px) {
+  .services__item {
+    width: calc((100% - 20px) / 2);
+    margin-bottom: 20px; } }
 
 .about-promo {
   display: flex;
@@ -1287,7 +1300,7 @@ img {
 .about-promo__promo {
   width: 75%;
   text-align: left; }
-  .about-promo__promo h1 {
+  .about-promo__promo h2 {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
@@ -1393,6 +1406,19 @@ img {
   width: 285px;
   height: 520px; }
 
+@media (max-width: 959px) {
+  .about-promo__promo ul {
+    margin-left: 60px; } }
+
+@media (max-width: 575px) {
+  .about-promo {
+    flex-direction: column;
+    align-items: center; }
+    .about-promo__promo {
+      width: 100%; }
+    .about-promo__banner {
+      margin-top: 40px; } }
+
 .guarantee-banner {
   position: relative;
   width: 285px;
@@ -1439,8 +1465,38 @@ img {
   height: 105px;
   z-index: 1; }
 
-.main__calc {
-  margin-top: 70px; }
+.inner .guarantee-banner {
+  width: 100%;
+  height: max-content; }
+  .inner .guarantee-banner .guarantee-banner__bg {
+    width: 100%;
+    height: auto; }
+  .inner .guarantee-banner p {
+    margin-top: 25px; }
+    .inner .guarantee-banner p span {
+      text-transform: uppercase; }
+
+@media (max-width: 1199px) {
+  .inner .guarantee-banner p {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-size: 16px; } }
+
+@media (max-width: 767px) {
+  .main .guarantee-banner p {
+    font-size: 16px; }
+  .inner .guarantee-banner p {
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 35px;
+    margin-top: 25px;
+    font-size: 20px; } }
+
+@media (max-width: 575px) {
+  .main .guarantee-banner p {
+    font-size: 18px; } }
 
 .service-calc {
   width: 100%; }
@@ -1684,8 +1740,124 @@ img {
   .calc-form__footnote:last-child {
     margin-right: 0; }
 
-.main__clients {
-  margin-top: 95px; }
+.inner .calc-form {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+  .inner .calc-form h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-family: "Roboto Condensed", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #333333; }
+  .inner .calc-form p {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333; }
+
+.inner .calc-form__about-auto {
+  width: 100%;
+  margin-bottom: 25px; }
+
+.inner .calc-form__services {
+  width: 100%;
+  margin-bottom: 40px; }
+
+.inner .calc-form__required {
+  width: 100%;
+  margin-bottom: 25px; }
+
+.inner .calc-form__result-panel {
+  margin-top: 0;
+  padding: 25px 20px;
+  background: #1bace8; }
+
+.inner .calc-form__result p {
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff; }
+  .inner .calc-form__result p:last-child {
+    margin-bottom: 0; }
+
+.inner .calc-form__footnotes {
+  display: block;
+  margin-top: 0;
+  padding: 20px;
+  padding-bottom: 0; }
+
+.inner .calc-form__footnote {
+  margin-top: 0; }
+  .inner .calc-form__footnote:last-child {
+    margin-bottom: 0; }
+
+@media (max-width: 1199px) {
+  .main .calc-form__result-panel {
+    justify-content: space-around; }
+  .main .calc-form__contatcs {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .main .calc-form__contatcs input[type="text"],
+    .main .calc-form__contatcs input[type="tel"] {
+      margin-bottom: 5px; } }
+
+@media (max-width: 959px) {
+  .main .calc-form__result-panel {
+    margin-top: 25px; }
+  .main .calc-form__about-auto,
+  .main .calc-form__services,
+  .main .calc-form__required {
+    width: calc(90% / 2);
+    margin-right: 5px;
+    margin-bottom: 20px; }
+  .main .calc-form__footnotes {
+    flex-direction: column; }
+  .main .calc-form__footnote {
+    margin-bottom: 10px; }
+    .main .calc-form__footnote:last-child {
+      margin-bottom: 0; } }
+
+@media (max-width: 767px) {
+  .main .calc-form__wrapper {
+    justify-content: center; }
+  .main .calc-form__about-auto,
+  .main .calc-form__services,
+  .main .calc-form__required {
+    width: 100%;
+    max-width: 430px;
+    min-width: 305px; } }
+
+@media (max-width: 575px) {
+  .main .calc-form__about-auto,
+  .main .calc-form__services,
+  .main .calc-form__required {
+    width: 100%;
+    min-width: unset;
+    margin-right: 0; }
+  .main .calc-form__select {
+    min-width: unset; }
+  .main .calc-form__contatcs {
+    align-items: center;
+    width: 100%; }
+  .main .calc-form__contatcs input[type="text"],
+  .main .calc-form__contatcs input[type="tel"] {
+    width: 280px;
+    margin-right: 0; }
+  .main .calc-form__request-button {
+    width: 280px; }
+  .inner .calc-form__about-auto {
+    margin-right: 0; } }
 
 .for-clients {
   display: flex;
@@ -1738,8 +1910,18 @@ img {
     .for-clients__article a:hover {
       text-decoration: none; }
 
-.main__banner {
-  margin-top: 90px; }
+@media (max-width: 1199px) {
+  .for-clients__article {
+    max-width: 45%; } }
+
+@media (max-width: 959px) {
+  .for-clients__article {
+    max-width: 100%;
+    margin-bottom: 40px; }
+    .for-clients__article h3 {
+      min-height: unset; }
+    .for-clients__article:last-child {
+      margin-bottom: 0; } }
 
 .promo-banner {
   display: flex;
@@ -1827,8 +2009,6 @@ img {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* width: 625px; */
-    /* min-width: 450px; */
     object-fit: cover;
     z-index: -1; }
   .promo-banner__promo-description .promo-banner__promo-text {
@@ -1839,6 +2019,81 @@ img {
   .promo-banner__promo-description .promo-banner__text-wrapper {
     text-align: left;
     margin-left: 100px; }
+
+@media (max-width: 959px) {
+  .promo-banner::before {
+    width: 400px;
+    transform: skewX(0deg);
+    z-index: 2; }
+  .promo-banner__promo-description .promo-banner__text-wrapper {
+    margin-left: 30px; } }
+
+@media (max-width: 767px) {
+  .promo-banner {
+    flex-direction: column;
+    min-width: 300px; }
+    .promo-banner::before {
+      display: none; }
+  .promo-banner__promo-info {
+    flex-direction: column;
+    min-width: 335px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 13px solid #092847;
+    background-color: #fff; }
+  .promo-banner__promo-description .promo-banner__text-wrapper {
+    margin-left: 0px;
+    padding: 30px; }
+  .promo-banner__promo-description .promo-banner__promo-text {
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .promo-banner__promo-description h2 {
+    max-width: none;
+    margin-right: 0; }
+  .promo-banner__promo-description p {
+    margin-right: 0; } }
+
+.page {
+  width: 100%;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333; }
+
+.modal-active {
+  overflow: hidden;
+  pointer-events: none; }
+
+.page__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.main-nav {
+  position: relative;
+  max-width: 1280px;
+  background-color: rgba(255, 255, 255, 0.781); }
+
+.main__container {
+  display: flex;
+  justify-content: space-between; }
+
+.main__services {
+  margin-top: 40px; }
+
+.main__about-promo {
+  margin-top: 60px; }
+
+.main__calc {
+  margin-top: 70px; }
+
+.main__clients {
+  margin-top: 95px; }
+
+.main__banner {
+  margin-top: 90px; }
 
 .main__discounts {
   margin-top: 100px; }
@@ -1935,6 +2190,7 @@ img {
   .cars__item:hover {
     border: 1px solid #a8a8a8; }
   .cars__item h3 {
+    align-self: flex-start;
     margin: 0;
     padding: 0;
     font-family: "Roboto Condensed", "Open Sans", sans-serif;
@@ -1948,6 +2204,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -2010,7 +2267,8 @@ img {
   background-position: center;
   background-size: contain;
   z-index: 2;
-  cursor: pointer; }
+  cursor: pointer;
+  pointer-events: none; }
 
 .gallery__slider {
   max-width: 590px;
@@ -2104,7 +2362,7 @@ img {
     line-height: 50px;
     color: #333333;
     background-color: rgba(255, 255, 255, 0.8); }
-  .main-footer__contacts h3 {
+  .main-footer__contacts .main-footer__address-title {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
@@ -2390,70 +2648,9 @@ form input.error {
 
 .inner__calc {
   margin-top: 20px; }
-  .inner__calc .calc-form {
-    padding-top: 30px;
-    padding-bottom: 20px; }
-  .inner__calc h2 {
-    margin: 0;
-    margin-bottom: 25px;
-    padding: 0;
-    font-family: "Roboto Condensed", "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #333333; }
-  .inner__calc p {
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
-    font-family: "Roboto", "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #333333; }
-  .inner__calc .calc-form__about-auto {
-    width: 100%;
-    margin-bottom: 25px; }
-  .inner__calc .calc-form__services {
-    width: 100%;
-    margin-bottom: 40px; }
-  .inner__calc .calc-form__required {
-    width: 100%;
-    margin-bottom: 25px; }
-  .inner__calc .calc-form__result-panel {
-    margin-top: 0;
-    padding: 25px 20px;
-    background: #1bace8; }
-  .inner__calc .calc-form__result p {
-    margin-bottom: 20px;
-    font-family: "Roboto Condensed", "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff; }
-    .inner__calc .calc-form__result p:last-child {
-      margin-bottom: 0; }
-  .inner__calc .calc-form__footnotes {
-    display: block;
-    margin-top: 0;
-    padding: 20px;
-    padding-bottom: 0; }
-  .inner__calc .calc-form__footnote {
-    margin-top: 0; }
-    .inner__calc .calc-form__footnote:last-child {
-      margin-bottom: 0; }
 
 .inner__banner {
   margin-top: 20px; }
-  .inner__banner.guarantee-banner {
-    width: 100%;
-    height: max-content; }
-    .inner__banner.guarantee-banner .guarantee-banner__bg {
-      width: 100%;
-      height: auto; }
-  .inner__banner p {
-    margin-top: 25px; }
-    .inner__banner p span {
-      text-transform: uppercase; }
 
 .inner__footer {
   margin-top: 85px; }
@@ -2537,27 +2734,12 @@ form input.error {
   fill: #0b516e; }
 
 @media (max-width: 1199px) {
-  .header__top {
-    padding-top: 0px; }
-  .main .calc-form__result-panel {
-    justify-content: space-around; }
-  .main .calc-form__contatcs {
-    display: flex;
-    flex-direction: column;
-    margin-right: 0;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-    .main .calc-form__contatcs input[type="text"],
-    .main .calc-form__contatcs input[type="tel"] {
-      margin-bottom: 5px; }
-  .for-clients__article {
-    max-width: 45%; }
   .discounts__item {
     max-width: 45%; }
-  .cars__item {
+  .main .cars__item {
     width: calc((100% - 10px) / 3);
     min-width: 260px; }
-    .cars__item:nth-child(3n) {
+    .main .cars__item:nth-child(3n) {
       margin-right: 0; }
   .inner .cars__item {
     width: calc((100% - 5px) / 2);
@@ -2568,51 +2750,8 @@ form input.error {
       margin-right: 0; } }
 
 @media (max-width: 959px) {
-  .header__top {
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 20px; }
-  .header__contacts {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: unset;
-    text-align: center; }
   .main-nav.page__container {
     padding-right: 20px; }
-  .header__logo-description {
-    margin-right: 20px; }
-  .services__item {
-    width: calc((100% - 20px) / 2);
-    margin-bottom: 20px; }
-  .about-promo__promo ul {
-    margin-left: 60px; }
-  .main .calc-form__result-panel {
-    margin-top: 25px; }
-  .main .calc-form__about-auto,
-  .main .calc-form__services,
-  .main .calc-form__required {
-    width: calc(90% / 2);
-    margin-right: 5px;
-    margin-bottom: 20px; }
-  .main .calc-form__footnotes {
-    flex-direction: column; }
-  .main .calc-form__footnote {
-    margin-bottom: 10px; }
-    .main .calc-form__footnote:last-child {
-      margin-bottom: 0; }
-  .for-clients__article {
-    max-width: 100%;
-    margin-bottom: 40px; }
-    .for-clients__article h3 {
-      min-height: unset; }
-    .for-clients__article:last-child {
-      margin-bottom: 0; }
-  .promo-banner::before {
-    width: 400px;
-    transform: skewX(0deg);
-    z-index: 2; }
-  .promo-banner__promo-description .promo-banner__text-wrapper {
-    margin-left: 30px; }
   .discounts__item {
     max-width: 100%; }
   .cars__item {
@@ -2641,46 +2780,6 @@ form input.error {
       margin-right: 0; } }
 
 @media (max-width: 767px) {
-  .header__logo {
-    margin-right: 10px; }
-  .header__logo-description {
-    margin-right: 10px; }
-  .header__subaru-logo {
-    margin-right: 0px; }
-  .header__button-list .header__button {
-    width: 265px; }
-  .promo-banner {
-    flex-direction: column;
-    min-width: 300px; }
-    .promo-banner::before {
-      display: none; }
-  .promo-banner__promo-info {
-    flex-direction: column;
-    min-width: 335px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 13px solid #092847;
-    background-color: #fff; }
-  .promo-banner__promo-description .promo-banner__text-wrapper {
-    margin-left: 0px;
-    padding: 30px; }
-  .promo-banner__promo-description .promo-banner__promo-text {
-    margin-bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  .promo-banner__promo-description h2 {
-    max-width: none;
-    margin-right: 0; }
-  .promo-banner__promo-description p {
-    margin-right: 0; }
-  .main .calc-form__wrapper {
-    justify-content: center; }
-  .main .calc-form__about-auto,
-  .main .calc-form__services,
-  .main .calc-form__required {
-    width: 100%;
-    max-width: 430px;
-    min-width: 305px; }
   .inner__aside-panel {
     align-self: center;
     width: 80%;
@@ -2700,44 +2799,11 @@ form input.error {
   .page__container {
     padding-left: 10px;
     padding-right: 10px; }
-  .header__logo {
-    margin-right: 0; }
-  .header__logo-description {
-    width: 100%;
-    margin-right: 0;
-    margin-top: 10px;
-    text-align: center; }
-  .header__subaru-logo {
-    display: none; }
-  .about-promo {
-    flex-direction: column;
-    align-items: center; }
-    .about-promo__promo {
-      width: 100%; }
-    .about-promo__banner {
-      margin-top: 40px; }
-  .main .calc-form__about-auto,
-  .main .calc-form__services,
-  .main .calc-form__required {
-    width: 100%;
-    min-width: unset;
-    margin-right: 0; }
-  .main .calc-form__select {
-    min-width: unset; }
-  .main .calc-form__contatcs {
-    align-items: center;
-    width: 100%; }
-  .main .calc-form__contatcs input[type="text"],
-  .main .calc-form__contatcs input[type="tel"] {
-    width: 280px;
-    margin-right: 0; }
-  .main .calc-form__request-button {
-    width: 280px; }
-  .cars__item {
+  .main .cars__item {
     width: 100%;
     min-width: 260px;
     margin-right: 0; }
-    .cars__item:nth-child(3n) {
+    .main .cars__item:nth-child(3n) {
       margin-right: 0; }
   .main__container_about-company {
     flex-direction: column; }
@@ -2768,8 +2834,6 @@ form input.error {
   .inner__aside-panel {
     width: 100%;
     margin-top: 20px; }
-  .inner .calc-form__about-auto {
-    margin-right: 0; }
   .inner .cars__item {
     width: 100%;
     min-width: 260px;
@@ -2916,6 +2980,14 @@ form input.error {
 .modal_show {
   display: flex; }
 
+@keyframes top_button_show {
+  from {
+    opacity: 0;
+    transform: translateY(15px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
 .to-top {
   display: none;
   position: fixed;
@@ -2926,6 +2998,8 @@ form input.error {
     width: 45px;
     height: 45px;
     border: none;
-    background-color: rgba(27, 172, 232, 0.65); }
+    background-color: rgba(27, 172, 232, 0.65);
+    cursor: pointer; }
   .to-top_show {
-    display: block; }
+    display: block;
+    animation: top_button_show 0.3s ease-in-out; }

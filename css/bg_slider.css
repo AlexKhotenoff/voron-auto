@@ -1,0 +1,22 @@
+@keyframes slide-fade {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.bg-slider {
+  width: 100%;
+  height: 100%; }
+
+.bg-slider__slide {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  .bg-slider__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; }
+
+.bg-slider__slide_fade {
+  animation: slide-fade 3s normal; }
