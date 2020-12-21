@@ -198,6 +198,7 @@ function modal_init() {
     if (active_modal) {
         var cancel_button = active_modal.querySelector('.modal__button_cancel');
         var close_button = active_modal.querySelector('.modal__button_close');
+        var w_close_button = active_modal.querySelector('.modal__button_w-close');
 
         if (cancel_button) {
             cancel_button.addEventListener('click', function () {
@@ -207,6 +208,12 @@ function modal_init() {
 
         if (close_button) {
             close_button.addEventListener('click', function () {
+                modal_close(active_modal);
+            });
+        }
+
+        if (w_close_button) {
+            w_close_button.addEventListener('click', function () {
                 modal_close(active_modal);
             });
         }
