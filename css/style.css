@@ -1120,15 +1120,16 @@ img {
       height: 25px;
       width: 40px;
       background-repeat: no-repeat;
-      background-size: auto 25px; }
+      background-size: contain;
+      background-position: 0 center; }
     .header__button-list .header__button_repair::before {
-      background-image: url("../img/icons/repair_icon.png"); }
+      background-image: url("../img/icons/svg/repair_icon.svg"); }
     .header__button-list .header__button_service-calc::before {
-      background-image: url("../img/icons/service_calc_icon.png"); }
+      background-image: url("../img/icons/svg/service_calc_icon.svg"); }
     .header__button-list .header__button_evacuator {
-      padding-left: 60px; }
+      padding-left: 65px; }
       .header__button-list .header__button_evacuator::before {
-        background-image: url("../img/icons/evaсuator_icon.png"); }
+        background-image: url("../img/icons/svg/evaсuator_icon.svg"); }
     .header__button-list .header__button_red {
       background-color: #a7402a; }
 
@@ -1195,7 +1196,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 45px;
-  background-image: url("../img/icons/search_input_icon.png");
+  background-image: url("../img/icons/svg/search_input_icon.svg");
   background-size: 29px 32px;
   background-position: 7px center;
   background-repeat: no-repeat; }
@@ -1205,7 +1206,7 @@ img {
   height: 30px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icons/search_icon.png");
+  background-image: url("../img/icons/svg/search_icon.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1916,7 +1917,7 @@ img {
     text-decoration: underline;
     color: #1bace8;
     background-color: #f9f9f9;
-    background-image: url("../img/icons/doc_icon.png");
+    background-image: url("../img/icons/svg/doc_icon.svg");
     background-repeat: no-repeat;
     background-position: 20px center;
     background-size: 35px 34px; }
@@ -2171,7 +2172,7 @@ img {
     font-family: "Roboto Condensed", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #1e8bb7; }
+    color: #1bace8; }
   .cars__item img {
     object-fit: contain;
     filter: grayscale(1); }
@@ -2423,8 +2424,8 @@ img {
   padding: 0;
   width: calc((100% - 120px) / 3); }
   .advantages__item img {
-    width: 46px;
-    height: 46px;
+    width: 44px;
+    height: 44px;
     object-fit: contain; }
 
 .advantages__icon {
