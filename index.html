@@ -27,18 +27,43 @@
 <body class="page main">
     <header class="header">
         <div class="header__slider bg-slider">
-            <div class="bg-slider__slide">
+            <!-- <div class="bg-slider__slide">
                 <img src="/img/slider/1.jpg" alt="1 slide">
+            </div> -->
+            <div class="bg-slider__slide">
+                <img srcset="/img/slider/1-640.jpg 640w, 
+                /img/slider/1-920.jpg 920w, 
+                /img/slider/1-1280.jpg 1280w, 
+                /img/slider/1-1600.jpg 1600w"
+                src="/img/slider/1.jpg" alt="1 slide">
             </div>
             <div class="bg-slider__slide">
-                <img src="/img/slider/2.jpg" alt="2 slide">
+                <img srcset="/img/slider/2-640.jpg 640w, 
+                /img/slider/2-920.jpg 920w, 
+                /img/slider/2-1280.jpg 1280w, 
+                /img/slider/2-1600.jpg 1600w"
+                src="/img/slider/2.jpg" alt="2 slide">
             </div>
             <div class="bg-slider__slide">
+                <img srcset="/img/slider/3-640.jpg 640w, 
+                /img/slider/3-920.jpg 920w, 
+                /img/slider/3-1280.jpg 1280w, 
+                /img/slider/3-1600.jpg 1600w"
+                src="/img/slider/3.jpg" alt="3 slide">
+            </div>
+            <div class="bg-slider__slide">
+                <img srcset="/img/slider/4-640.jpg 640w, 
+                /img/slider/4-920.jpg 920w, 
+                /img/slider/4-1280.jpg 1280w, 
+                /img/slider/4-1600.jpg 1600w"
+                src="/img/slider/4.jpg" alt="4 slide">
+            </div>
+            <!-- <div class="bg-slider__slide">
                 <img src="/img/slider/3.jpg" alt="3 slide">
             </div>
             <div class="bg-slider__slide">
                 <img src="/img/slider/4.jpg" alt="4 slide">
-            </div>
+            </div> -->
         </div>
         <div class="header__wrap">
             <section class="header__top page__container">
@@ -733,14 +758,18 @@
                 <h2>Наши преимущества</h2>
                 <ul class="advantages__list">
                     <li class="advantages__item">
-                        <img src="./img/icons/origin_parts_icon.png" alt="Оригинальные запчасти">
+                        <figure class="advantages__icon">
+                            <img src="./img/icons/origin_parts_icon.png" alt="Оригинальные запчасти">
+                        </figure>
                         <div class="advantages__text-container">
                             <h3>Оригинальные запчасти</h3>
                             <p>В нашем сервисе, мы используем исключительно оригинальные запчасти</p>
                         </div>
                     </li>
                     <li class="advantages__item">
-                        <img src="./img/icons/include_parts_icon.png" alt="Все запчасти в наличии">
+                        <figure class="advantages__icon">
+                            <img src="./img/icons/include_parts_icon.png" alt="Все запчасти в наличии">
+                        </figure>
                         <div class="advantages__text-container">
                             <h3>Все запчасти в наличии</h3>
                             <p>Собственный склад и своевременные закупки запчастей, благодаря
@@ -748,7 +777,9 @@
                         </div>
                     </li>
                     <li class="advantages__item">
-                        <img src="./img/icons/experience_icon.png" alt="Многолетний опыт">
+                        <figure class="advantages__icon">
+                            <img src="./img/icons/experience_icon.png" alt="Многолетний опыт">
+                        </figure>
                         <div class="advantages__text-container">
                             <h3>Многолетний опыт мастеров</h3>
                             <p>Все наши мастера обладают опытом от 10 лет, профессионально
@@ -756,7 +787,9 @@
                         </div>
                     </li>
                     <li class="advantages__item">
-                        <img src="./img/icons/evacuate__icon.png" alt="Эвакуация автомобиля">
+                        <figure class="advantages__icon">
+                            <img src="./img/icons/evacuate__icon.png" alt="Эвакуация автомобиля">
+                        </figure>
                         <div class="advantages__text-container">
                             <h3>Эвакуация автомобиля</h3>
                             <p>Эвакуация автомобиля от клиента до сервиса и возврат готового авто
@@ -764,14 +797,18 @@
                         </div>
                     </li>
                     <li class="advantages__item">
-                        <img src="./img/icons/discounts_icon.png" alt="Скидки постоянным покупателям">
+                        <figure class="advantages__icon">
+                            <img src="./img/icons/discounts_icon.png" alt="Скидки постоянным покупателям">
+                        </figure>
                         <div class="advantages__text-container">
                             <h3>Скидки постоянным покупателям</h3>
                             <p>Всем нашим постоянным клиентам мы предлагаем скидку от 5% до 25%</p>
                         </div>
                     </li>
                     <li class="advantages__item">
-                        <img src="./img/icons/subaru_love_icon.png" alt="Любовь к Subaru">
+                        <figure class="advantages__icon">
+                            <img src="./img/icons/subaru_love_icon.png" alt="Любовь к Subaru">
+                        </figure>
                         <div class="advantages__text-container">
                             <h3>Любовь к Subaru</h3>
                             <p>Все специалисты нашего сервиса являются фанатами данной марки и с любовью относятся к
@@ -956,8 +993,7 @@
     <div class="to-top">
         <button type="button" class="to-top__button">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.997 511.997" fill="#ffffff">
-                <path
-                    d="M508.707 365.621L263.374 130.954c-4.125-3.938-10.625-3.938-14.75 
+                <path d="M508.707 365.621L263.374 130.954c-4.125-3.938-10.625-3.938-14.75 
                     0L3.29 365.621a10.66 10.66 0 00-2.521 11.677 10.649 10.649 0 
                     009.896 6.698h42.667c2.729 0 5.354-1.042 
                     7.333-2.927l195.333-185.042 195.333 185.042a10.623 10.623 
